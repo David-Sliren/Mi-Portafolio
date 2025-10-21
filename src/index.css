@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image:
+    linear-gradient(to right, rgba(125, 125, 125, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(125, 125, 125, 0.28) 1px, transparent 1px);
+  min-height: 100dvh;
+  width: 100%;
+  background-size: 40px 40px;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* .headerBtn {
+  @apply 
+} */

@@ -13,9 +13,9 @@ const icons = import.meta.glob("../../assets/icons/*.svg", {
 const allIcons = Object.values(icons);
 
 // Iconos de tecnologias
-const tecnoligiasIcon = allIcons.filter((element, index) => index < 8);
+export const tecnoligiasIcon = allIcons.filter((element, index) => index < 8);
 
-const tecnologiasName = [
+export const tecnologiasName = [
   "HTML",
   "CSS",
   "JavaScrpit",
@@ -40,6 +40,7 @@ function Skills() {
             {tecnoligiasIcon.map((item, i) => {
               return (
                 <Icons1
+                  key={i}
                   className="grow border-1 border-black bg-sky-600 pointer-events-none hover:bg-sky-400"
                   size="size-10 w-fit gap-2"
                 >
@@ -57,6 +58,7 @@ function Skills() {
             {herramientasIcon.map((item, i) => {
               return (
                 <Icons1
+                  key={i}
                   className="grow border-1 border-black bg-zinc-800 pointer-events-none hover:bg-zinc-600"
                   size="size-10 w-fit gap-2"
                 >

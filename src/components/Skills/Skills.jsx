@@ -35,14 +35,15 @@ function Skills() {
   return (
     <>
       <section>
-        <Plantilla1 title="Tecnologias : ">
-          <span className="flex flex-wrap gap-2 w-full mt-4">
+        <Plantilla1 title="Tecnologias">
+          <span className="flex flex-wrap gap-2 w-full">
             {tecnoligiasIcon.map((item, i) => {
               return (
                 <Icons1
                   key={i}
-                  className="grow border-1 border-black bg-sky-600 pointer-events-none hover:bg-sky-400"
+                  className="grow border-1 border-black bg-sky-600 hover:bg-sky-400"
                   size="size-10 w-fit gap-2"
+                  pointerEvents={false}
                 >
                   <img
                     className="size-full py-1"
@@ -59,8 +60,9 @@ function Skills() {
               return (
                 <Icons1
                   key={i}
-                  className="grow border-1 border-black bg-zinc-800 pointer-events-none hover:bg-zinc-600"
+                  className="grow border-1 border-black bg-zinc-800 hover:bg-zinc-600"
                   size="size-10 w-fit gap-2"
+                  pointerEvents={false}
                 >
                   <img
                     className="size-full py-1"

@@ -6,8 +6,8 @@ import Resaltado from "../001 Plantillas/Resaltado";
 function AboutMe() {
   return (
     <>
-      <Plantilla1 title="Sobre mi :">
-        <article className="flex flex-col gap-3">
+      <Plantilla1 title="Sobre mi">
+        <article className="-mt-2 flex flex-col gap-3">
           <Parrafos>
             Soy un{" "}
             <Resaltado desarrollador web Front-End>

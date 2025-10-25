@@ -14,7 +14,7 @@ const proyects = [
   {
     title: "Memorma",
     descripcion:
-      "Implementación interactiva del clásico juego de la memoria (Memorama). Desarrollado con el objetivo de reforzar la lógica de manejo de estado, comparación de elementos y temporizadores en JavaScript. Demuestra mi habilidad para crear experiencias de usuario sencillas y funcionales desde cero.",
+      "Desarrollé una aplicación de juego de memoria (Memorama) diseñada para ofrecer una experiencia de usuario fluida y demostrar una sólida comprensión de la arquitectura frontend moderna y la persistencia de datos. Este proyecto destaca la capacidad de construir lógica de aplicación compleja (seguimiento de pares, manejo de estado de volteo de cartas y puntuación) con un enfoque en el rendimiento óptimo.",
     seeMore: "",
     tecnologies: ["React", "FireBase", "CSS"],
     link: "https://memoramasimple.netlify.app/",
@@ -22,7 +22,7 @@ const proyects = [
   {
     title: "Chat Ai",
     descripcion:
-      "Desarrollo de una interfaz de usuario interactiva para un sistema de chat basado en IA. El proyecto se centra en la experiencia de usuario y la gestión dinámica del DOM para simular una conversación fluida, manejando entradas de usuario y la presentación de respuestas. Demuestra habilidades en diseño de UI/UX, animación de elementos de chat y lógica de interacción.",
+      "Desarrollé una interfaz de chat conversacional de alto rendimiento, diseñada para interactuar con un servicio de inteligencia artificial. El foco principal de este proyecto fue la creación de una experiencia de usuario dinámica e intuitiva que simula un entorno de chat en tiempo real. Este desarrollo demuestra la capacidad para gestionar la interacción usuario-sistema de manera eficiente, manteniendo la estructura de la conversación y ofreciendo una presentación visual pulcra.",
     seeMore: "",
     tecnologies: ["React", "CSS"],
     link: "https://chat-ai-p1.netlify.app/",
@@ -42,8 +42,8 @@ function Proyects() {
 
   return (
     <>
-      <Plantilla1 title="Proyectos :">
-        <article className=" flex flex-col items-center gap-18 mt-10 perspective-midrange">
+      <Plantilla1 title="Proyectos">
+        <article className=" flex flex-col items-center gap-14 perspective-midrange">
           {image.map((item, i) => {
             return (
               <Card1 key={i}>
@@ -57,6 +57,7 @@ function Proyects() {
                         className="bg-transparent"
                         padding="p-0"
                         gradient={false}
+                        pointerEvents={false}
                       >
                         <img
                           className="size-full scale-70"
@@ -68,7 +69,7 @@ function Proyects() {
                 </div>
                 <TitleAndParagraph
                   title={proyects[i].title}
-                  text={proyects[1].descripcion}
+                  text={proyects[i].descripcion}
                 />
 
                 <Icons1

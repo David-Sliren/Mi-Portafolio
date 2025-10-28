@@ -55,7 +55,7 @@ function Skills() {
               );
             })}
           </span>
-          <span className="flex flex-wrap gap-2 w-full mt-4">
+          <span className="flex flex-wrap gap-2 w-full">
             {herramientasIcon.map((item, i) => {
               return (
                 <Icons1

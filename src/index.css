@@ -11,6 +11,7 @@ body {
   background-size: 40px 40px;
   background-color: #0f0f0f;
   color: white;
+  backdrop-filter: blur(10px);
 }
 
 /* .headerBtn {

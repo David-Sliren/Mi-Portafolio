@@ -11,11 +11,15 @@ import Parrafos from "../components/001 Plantillas/Parrafos";
 function Portafolio() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] w-full min-h-full">
-      <header className="flex gap-4 items-center border-white border-b-2 py-6 px-4">
-        <Presentation />
+      <header className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
+        <div className="w-full flex gap-4 items-center py-6 px-4 ">
+          <Presentation />
+        </div>
+        <div className="w-full">
+          <AboutMe />
+        </div>
       </header>
       <main className="flex flex-col gap-15 bg-transparent overflow-x-hidden py-4 pt-5">
-        <AboutMe />
         <Skills />
         <Proyects />
         <Certificates />

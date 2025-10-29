@@ -36,13 +36,13 @@ function Skills() {
     <>
       <section>
         <Plantilla1 title="Tecnologias">
-          <span className="flex flex-wrap gap-2 w-full">
+          <span className="flex flex-wrap gap-2 w-full md:after:content-[''] md:after:bg-transparent md:after:w-100 md:after:h-[fit]">
             {tecnoligiasIcon.map((item, i) => {
               return (
                 <Icons1
                   key={i}
                   className="grow border-1 border-black bg-sky-600 hover:bg-sky-400"
-                  size="size-10 w-fit gap-2"
+                  size="size-10 w-fit gap-2 md:gap-3"
                   pointerEvents={false}
                 >
                   <img
@@ -55,12 +55,12 @@ function Skills() {
               );
             })}
           </span>
-          <span className="flex flex-wrap gap-2 w-full">
+          <span className="flex flex-wrap gap-2 w-full ">
             {herramientasIcon.map((item, i) => {
               return (
                 <Icons1
                   key={i}
-                  className="grow border-1 border-black bg-zinc-800 hover:bg-zinc-600"
+                  className="grow md:px-9 md:gap-0 border-1 border-black bg-zinc-800 hover:bg-zinc-600"
                   size="size-10 w-fit gap-2"
                   pointerEvents={false}
                 >

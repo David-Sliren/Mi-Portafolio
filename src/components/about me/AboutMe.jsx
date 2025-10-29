@@ -7,7 +7,7 @@ function AboutMe() {
   return (
     <>
       <Plantilla1 title="Sobre mi">
-        <article className="-mt-2 flex flex-col gap-3">
+        <article className="-mt-2 flex flex-col gap-3 md:pr-2">
           <Parrafos>
             Soy un{" "}
             <Resaltado desarrollador web Front-End>

@@ -11,7 +11,7 @@ import { Mail } from "lucide-react";
 
 function Portafolio() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] w-full min-h-full">
+    <div className="grid grid-rows-[auto_1fr_auto] w-full md:w-[710px] min-h-full ">
       <header className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
         <div className="w-full flex gap-4 items-center py-6 px-4 ">
           <Presentation />

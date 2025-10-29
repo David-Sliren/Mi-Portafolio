@@ -43,7 +43,7 @@ function Proyects() {
   return (
     <>
       <Plantilla1 title="Proyectos">
-        <article className=" flex flex-col items-center gap-14 perspective-midrange">
+        <article className=" flex flex-col md-w-full md:grid md:grid-cols-2 md:place-items-center items-center md:gap-0 md:scroll gap-14 perspective-midrange">
           {image.map((item, i) => {
             return (
               <Card1 key={i}>

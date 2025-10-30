@@ -8,10 +8,16 @@ import Icons1 from "../components/001 Plantillas/Icons1";
 import Contacts from "../components/001 Plantillas/Contacts";
 import Parrafos from "../components/001 Plantillas/Parrafos";
 import { Mail } from "lucide-react";
+import { useRef } from "react";
+import { Nanao } from "../hooks/useObserver";
 
 function Portafolio() {
+  const container = useRef();
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] w-full md:min-w-[710px] md:max-w-[720px] min-h-full ">
+    <div
+      ref={container}
+      className="grid grid-rows-[auto_1fr_auto] w-full md:w-[710px] min-h-full "
+    >
       <header className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
         <div className="w-full flex gap-4 items-center py-6 px-4 ">
           <Presentation />
@@ -20,7 +26,7 @@ function Portafolio() {
           <AboutMe />
         </div>
       </header>
-      <main className="scrollbar-hidden flex flex-col gap-15 bg-transparent overflow-x-hidden py-5 pb-10">
+      <main className="flex flex-col gap-15 bg-transparent overflow-x-hidden py-5 pb-10">
         <Skills />
         <Proyects />
         <Certificates />

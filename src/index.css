@@ -11,20 +11,28 @@ body {
   background-size: 40px 40px;
   color: white;
   @apply bg-[#0f0f0f] md:bg-[#1a1a1a] backdrop-blur-2xl md:backdrop-blur-none;
+  animation: backgroundAnimation 100s linear infinite alternate;
 }
 
-/* @theme { */
 .scrollbar-hidden {
-  /* Regla para Firefox y Edge/IE */
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
-/* Regla para WebKit (Chrome, Safari) */
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-/* } */
 /* .headerBtn {
   @apply 
 } */
+
+@keyframes backgroundAnimation {
+  0%,
+  100% {
+    background-position: 45deg;
+  }
+
+  50% {
+    background-position: right;
+  }
+}

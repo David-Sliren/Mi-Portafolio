@@ -1,10 +1,15 @@
+import { useRef } from "react";
 import Yo from "../../assets/image/Yo.jpg";
 import Contacts from "../001 Plantillas/Contacts";
 
 function Presentation() {
+  // const container = useRef();
   return (
     <>
-      <div className="overflow-hidden rounded-full border-dotted border-2 border-zinc-600 size-25 hover:scale-110 transition-transform">
+      <div
+        // ref={container}
+        className="overflow-hidden rounded-full border-dotted border-2 border-zinc-600 size-25 hover:scale-110 transition-transform"
+      >
         <img className="size-full object-cover" src={Yo} alt="Hola" />
       </div>
       <section className="flex flex-col">

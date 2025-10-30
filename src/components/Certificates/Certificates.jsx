@@ -17,17 +17,17 @@ const certificatesLinks = [
   "https://www.freecodecamp.org/certification/david-sliren/responsive-web-design",
   "https://www.freecodecamp.org/certification/david-sliren/javascript-algorithms-and-data-structures-v8",
 ].reverse();
-console.log(certificates);
 
 function Certificates() {
   return (
     <>
       <section>
         <Plantilla1 title="Certificados">
-          <article className="flex flex-col gap-6 items-center">
+          <article className="flex flex-col gap-6 items-center w-full">
             {certificates.map((item, index) => {
               return (
                 <Card1
+                  key={index}
                   padding="p-6"
                   flex="flex flex-col items-start gap-3"
                   className="overflow-hidden"

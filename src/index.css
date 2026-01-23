@@ -9,9 +9,14 @@ body {
   min-height: 100dvh;
   width: 100%;
   background-size: 40px 40px;
+  background-position:
+    0 0,
+    0 0,
+    20px 20px,
+    20px 20px;
   color: white;
-  @apply bg-[#0f0f0f] md:bg-[#1a1a1a] backdrop-blur-2xl md:backdrop-blur-none;
-  animation: backgroundAnimation 100s linear infinite alternate;
+  @apply bg-[#0f0f0f] animate-none md:bg-[#1a1a1a] backdrop-blur-2xl md:backdrop-blur-none;
+  animation: backgroundAnimation 4s linear infinite;
 }
 
 .scrollbar-hidden {
@@ -27,12 +32,11 @@ body {
 } */
 
 @keyframes backgroundAnimation {
-  0%,
   100% {
-    background-position: 45deg;
-  }
-
-  50% {
-    background-position: right;
+    background-position:
+      40px 0,
+      40px 0,
+      80px 20px,
+      80px 200px;
   }
 }

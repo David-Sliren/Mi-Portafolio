@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import Portafolio from './pages/Portafolio'
-
+import Home from "./pages/Home";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Portafolio/>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

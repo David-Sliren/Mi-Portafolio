@@ -9,7 +9,7 @@ const img = import.meta.glob(
   {
     eager: true,
     as: "url",
-  }
+  },
 );
 
 const certificates = Object.values(img).reverse();
@@ -36,9 +36,9 @@ function Certificates() {
 
                   <div className="w-full flex gap-2">
                     <Icons1
-                      size="w-fit gap-2"
+                      size="w-full gap-2"
                       padding="p-2"
-                      className="bg-zinc-500"
+                      className="bg-sky-500 hover:bg-sky-500 grow"
                       link={certificatesLinks[index]}
                     >
                       <LinkIcon />
@@ -46,7 +46,7 @@ function Certificates() {
                     </Icons1>
 
                     <Icons1
-                      className="bg-sky-500 hover:bg-sky-500 grow"
+                      className="bg-zinc-500 hover:bg-sky-500 grow"
                       link="https://github.com/David-Sliren"
                       size="w-fit gap-2"
                       padding="p-2"

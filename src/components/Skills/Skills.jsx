@@ -19,7 +19,6 @@ export const tecnologiasName = [
   "HTML",
   "CSS",
   "JavaScrpit",
-  "Sass",
   "React",
   "FireBase",
   "TailwindCss",

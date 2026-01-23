@@ -26,7 +26,12 @@ function Contacts() {
           <Mail />
         </Icons1>
 
-        <Icons1 className="bg-red-600 hover:bg-red-400">CV</Icons1>
+        <Icons1
+          className="bg-red-600 hover:bg-red-400"
+          link="https://drive.google.com/file/d/1c7eJiQqKA8WHf1gSOC8ZKDDitfc3DQzh/view?usp=sharing"
+        >
+          CV
+        </Icons1>
       </article>
     </>
   );

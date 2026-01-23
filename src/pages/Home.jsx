@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Presentation from "../components/Presentation/Presentation";
 import AboutMe from "../components/about me/AboutMe";
 import Skills from "../components/Skills/Skills";
@@ -8,16 +7,10 @@ import Icons1 from "../components/001 Plantillas/Icons1";
 import Contacts from "../components/001 Plantillas/Contacts";
 import Parrafos from "../components/001 Plantillas/Parrafos";
 import { Mail } from "lucide-react";
-import { useRef } from "react";
-import { Nanao } from "../hooks/useObserver";
 
-function Portafolio() {
-  const container = useRef();
+function Home() {
   return (
-    <div
-      ref={container}
-      className="grid grid-rows-[auto_1fr_auto] w-full md:w-[710px] min-h-full "
-    >
+    <div className="grid grid-rows-[auto_1fr_auto] w-full md:w-[710px] min-h-full">
       <header className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
         <div className="w-full flex gap-4 items-center py-6 px-4 ">
           <Presentation />
@@ -51,4 +44,4 @@ function Portafolio() {
   );
 }
 
-export default Portafolio;
+export default Home;

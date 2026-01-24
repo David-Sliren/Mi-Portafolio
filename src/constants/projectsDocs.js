@@ -7,7 +7,13 @@ export const documents = [
     descripcion:
       "Desarrollé una aplicación Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).",
     seeMore: "",
-    tecnologies: ["React", "Tailwindcss"],
+    tecnologies: [
+      "React",
+      "Tailwindcss",
+      "TanStack-Query",
+      "React-Router",
+      "Motion",
+    ],
     link: "https://david-sliren.github.io/movies-new/",
   },
   {
@@ -15,7 +21,7 @@ export const documents = [
     descripcion:
       "Desarrollé una aplicación de juego de memoria (Memorama) diseñada para ofrecer una experiencia de usuario fluida y demostrar una sólida comprensión de la arquitectura frontend moderna y la persistencia de datos. Este proyecto destaca la capacidad de construir lógica de aplicación compleja (seguimiento de pares, manejo de estado de volteo de cartas y puntuación) con un enfoque en el rendimiento óptimo.",
     seeMore: "",
-    tecnologies: ["React", "CSS"],
+    tecnologies: ["React", "CSS", "Firebase"],
     link: "https://memoramasimple.netlify.app/",
   },
   {

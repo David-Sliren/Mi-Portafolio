@@ -3,6 +3,14 @@ Procure escribir los proyectos mas actuales arriba ya que la utilidad usada para
 */
 export const documents = [
   {
+    title: "Movie new",
+    descripcion:
+      "Desarrollé una aplicación Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).",
+    seeMore: "",
+    tecnologies: ["React", "Tailwindcss"],
+    link: "https://david-sliren.github.io/movies-new/",
+  },
+  {
     title: "Memorma",
     descripcion:
       "Desarrollé una aplicación de juego de memoria (Memorama) diseñada para ofrecer una experiencia de usuario fluida y demostrar una sólida comprensión de la arquitectura frontend moderna y la persistencia de datos. Este proyecto destaca la capacidad de construir lógica de aplicación compleja (seguimiento de pares, manejo de estado de volteo de cartas y puntuación) con un enfoque en el rendimiento óptimo.",

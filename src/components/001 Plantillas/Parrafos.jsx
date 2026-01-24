@@ -4,7 +4,9 @@ function Parrafos({
 }) {
   return (
     <>
-      <p className={`${className} transition duration-500 `}>{children}</p>
+      <p className={`${className} transition duration-500 min-w-fit`}>
+        {children}
+      </p>
     </>
   );
 }

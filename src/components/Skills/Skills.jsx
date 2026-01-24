@@ -38,8 +38,8 @@ function Skills() {
               return (
                 <Icons1
                   key={item.id}
-                  className=""
-                  size="size-10 w-fit gap-2"
+                  className="w-fit gap-2"
+                  size="size-10"
                   pointerEvents={false}
                 >
                   <img

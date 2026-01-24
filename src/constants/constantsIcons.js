@@ -21,7 +21,15 @@ Fijate en que el archivo este bien numerado para que concida con los nombres, la
 
 const lenguagesName = ["HTML", "CSS", "JavaScrpit"];
 
-const librarysName = ["React", "Tailwindcss"];
+const librarysName = [
+  "React",
+  "React-Native",
+  "Expo",
+  "Node js",
+  "React-Router",
+  "TanStack-Query",
+  "Tailwindcss",
+];
 
 const toolsName = ["Git", "Vite", "npm"];
 

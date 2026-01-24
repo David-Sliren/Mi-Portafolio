@@ -3,73 +3,70 @@ import AboutMe from "../about me/AboutMe";
 import Plantilla1 from "../001 Plantillas/Plantilla1";
 import Icons1 from "../001 Plantillas/Icons1";
 import Parrafos from "../001 Plantillas/Parrafos";
-
-// Obtener los iconos
-const icons = import.meta.glob("../../assets/icons/*.svg", {
-  eager: true,
-  as: "url",
-});
-
-const allIcons = Object.values(icons);
-
-// Iconos de tecnologias
-export const tecnoligiasIcon = allIcons.filter((element, index) => index < 8);
-
-export const tecnologiasName = [
-  "HTML",
-  "CSS",
-  "JavaScrpit",
-  "Sass",
-  "React",
-  "FireBase",
-  "TailwindCss",
-  "GSAP",
-];
-
-// Iconos de herramientas
-const herramientasIcon = allIcons.filter((element, index) => index > 7);
-
-const herramientasName = ["Vite", "Git", "npm", "pnpm"];
+import {
+  iconsLenguages,
+  iconsLibrarys,
+  iconsTools,
+} from "../../constants/constantsIcons";
 
 function Skills() {
   return (
     <>
       <section>
         <Plantilla1 title="Tecnologias">
-          <span className="flex flex-wrap gap-2 w-full md:after:content-[''] md:after:bg-transparent md:after:w-100 md:after:h-[fit]">
-            {tecnoligiasIcon.map((item, i) => {
+          <span className="flex flex-wrap gap-2 w-full">
+            {iconsLenguages.map((item) => {
               return (
                 <Icons1
-                  key={i}
-                  className="grow border-1 border-black bg-sky-600 hover:bg-sky-400"
+                  key={item.id}
+                  className=""
                   size="size-10 w-fit gap-2 md:gap-3"
                   pointerEvents={false}
                 >
                   <img
                     className="size-full py-1"
-                    src={item}
-                    alt={tecnologiasName[i]}
+                    src={item.url}
+                    alt={item.name}
                   />
-                  <Parrafos>{tecnologiasName[i]}</Parrafos>
+                  <Parrafos>{item.name}</Parrafos>
                 </Icons1>
               );
             })}
           </span>
-          <span className="flex flex-wrap gap-2 w-full ">
-            {herramientasIcon.map((item, i) => {
+          <span className="flex flex-wrap gap-2 w-full my-4">
+            {iconsLibrarys.map((item) => {
               return (
                 <Icons1
-                  key={i}
-                  className="grow md:px-9 md:gap-0 border-1 border-black bg-zinc-800 hover:bg-zinc-600"
+                  key={item.id}
+                  className=""
                   size="size-10 w-fit gap-2"
                   pointerEvents={false}
                 >
                   <img
                     className="size-full py-1"
-                    src={item}
-                    alt={herramientasName[i]}
+                    src={item.url}
+                    alt={item.name}
                   />
-                  <Parrafos>{herramientasName[i]}</Parrafos>
+                  <Parrafos>{item.name}</Parrafos>
+                </Icons1>
+              );
+            })}
+          </span>
+          <span className="flex flex-wrap gap-2 w-full ">
+            {iconsTools.map((item) => {
+              return (
+                <Icons1
+                  key={item.id}
+                  className=""
+                  size="size-10 w-fit gap-2"
+                  pointerEvents={false}
+                >
+                  <img
+                    className="size-full py-1"
+                    src={item.url}
+                    alt={item.name}
+                  />
+                  <Parrafos>{item.name}</Parrafos>
                 </Icons1>
               );
             })}

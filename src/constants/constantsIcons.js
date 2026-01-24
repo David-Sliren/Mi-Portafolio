@@ -29,6 +29,8 @@ const librarysName = [
   "React-Router",
   "TanStack-Query",
   "Tailwindcss",
+  "Motion",
+  "Firebase",
 ];
 
 const toolsName = ["Git", "Vite", "npm"];

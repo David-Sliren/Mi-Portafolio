@@ -1,10 +1,9 @@
 import Presentation from "../components/Presentation/Presentation";
 import AboutMe from "../components/about me/AboutMe";
 import Skills from "../components/Skills/Skills";
-// import Proyects from "../components/Proyects/Proyects";
+import Proyects from "../components/Proyects/Proyects";
 import Certificates from "../components/Certificates/Certificates";
 import Icons1 from "../components/001 Plantillas/Icons1";
-import { iconsLenguages } from "../constants/constantsIcons";
 
 import { Mail } from "lucide-react";
 
@@ -21,7 +20,7 @@ function Home() {
       </header>
       <main className="flex flex-col gap-15 bg-transparent overflow-x-hidden py-5 pb-10">
         <Skills />
-        {/* <Proyects /> */}
+        <Proyects />
         <Certificates />
       </main>
       <footer className="flex flex-col gap-2 items-center bg-zinc-900 p-4 py-6">

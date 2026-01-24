@@ -10,4 +10,17 @@ function utils({ url, value }) {
   return data;
 }
 
-export { utils };
+function utilsUnion({ union, organize }) {
+  const imgRegular = Object.values(union)
+    .map((item) => item.default)
+    .reverse();
+
+  const projects = organize.map((item, i) => ({
+    ...item,
+    src: imgRegular[i],
+  }));
+
+  return projects;
+}
+
+export { utils, utilsUnion };

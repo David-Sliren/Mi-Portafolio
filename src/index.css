@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-body {
-  display: flex;
-  justify-content: center;
+.container {
   background-image:
     linear-gradient(to right, rgba(125, 125, 125, 0.28) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(125, 125, 125, 0.28) 1px, transparent 1px);
@@ -15,7 +13,7 @@ body {
     20px 20px,
     20px 20px;
   color: white;
-  @apply bg-[#0f0f0f] animate-none md:bg-[#1a1a1a] backdrop-blur-2xl sm:backdrop-blur-none;
+  @apply bg-[#0f0f0f] animate-none md:bg-[#1a1a1a];
   animation: backgroundAnimation 4s linear infinite;
 }
 
@@ -27,9 +25,6 @@ body {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-/* .headerBtn {
-  @apply 
-} */
 
 @keyframes backgroundAnimation {
   100% {
@@ -40,6 +35,3 @@ body {
       80px 200px;
   }
 }
-
-/* responsive desing */
-/* md-w-full md:grid md:grid-cols-2 md:place-items-center items-center md:gap-0 md:scroll gap-14 perspective-midrange */

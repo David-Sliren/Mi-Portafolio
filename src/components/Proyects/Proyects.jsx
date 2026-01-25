@@ -10,17 +10,17 @@ function Proyects() {
   return (
     <>
       <Plantilla1 title="Proyectos">
-        <article className=" flex flex-col items-center md:gap-10 md:scroll gap-14 perspective-midrange md:responsive">
+        <article className=" flex flex-col items-center md:gap-10 md:scroll gap-14 perspective-midrange">
           {projects.map((item, i) => {
             return (
               <Card1
                 key={i}
-                className="flex flex-col items-center justify-center gap-6 py-6 px-8 w-[90%] md:w-full md:flex-row"
+                className="flex flex-col items-center justify-center gap-6 py-6 px-8 w-[90%] sm:w-full sm:flex-row"
               >
                 <div className="hobbie flex flex-col gap-6 md:min-w-86">
                   <Img1 img={item.src} />
 
-                  <div className=" flex justify-center md:justify-start bg-[#282727] py-0 rounded-t-lg w-full">
+                  <div className=" flex justify-center bg-[#282727] py-0 rounded-t-lg w-full">
                     {item.tecnologies?.map((item, index) => {
                       return (
                         <Icons1

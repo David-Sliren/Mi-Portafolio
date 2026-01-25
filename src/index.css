@@ -15,7 +15,7 @@ body {
     20px 20px,
     20px 20px;
   color: white;
-  @apply bg-[#0f0f0f] animate-none md:bg-[#1a1a1a] backdrop-blur-2xl md:backdrop-blur-none;
+  @apply bg-[#0f0f0f] animate-none md:bg-[#1a1a1a] backdrop-blur-2xl sm:backdrop-blur-none;
   animation: backgroundAnimation 4s linear infinite;
 }
 

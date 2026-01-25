@@ -4,7 +4,7 @@ import { getIcon } from "../../constants/constantsIcons";
 import Card1 from "../001 Plantillas/Card1";
 import Img1 from "../001 Plantillas/Img1";
 import TitleAndParagraph from "../001 Plantillas/TitleAndParagraph";
-import { projects } from "../../constants/constantsProyects";
+import { projects } from "../../constants/insertImage";
 
 function Proyects() {
   return (

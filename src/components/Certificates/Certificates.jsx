@@ -3,20 +3,7 @@ import Plantilla1 from "../001 Plantillas/Plantilla1";
 import Card1 from "../001 Plantillas/Card1";
 import Icons1 from "../001 Plantillas/Icons1";
 import { LinkIcon, Github } from "lucide-react";
-
-const img = import.meta.glob(
-  "../../assets/image/certificates/*.{png,jpg,jpeg, webp}",
-  {
-    eager: true,
-    as: "url",
-  },
-);
-
-const certificates = Object.values(img).reverse();
-const certificatesLinks = [
-  "https://www.freecodecamp.org/certification/david-sliren/responsive-web-design",
-  "https://www.freecodecamp.org/certification/david-sliren/javascript-algorithms-and-data-structures-v8",
-].reverse();
+import { certificates } from "../../constants/insertImage";
 
 function Certificates() {
   return (
@@ -32,14 +19,14 @@ function Certificates() {
                   flex="flex flex-col items-start gap-3"
                   className="overflow-hidden"
                 >
-                  <img src={item} alt="" />
+                  <img src={item.src} alt="" />
 
                   <div className="w-full flex gap-2">
                     <Icons1
                       size="w-full gap-2"
                       padding="p-2"
                       className="bg-sky-500 hover:bg-sky-500 grow"
-                      link={certificatesLinks[index]}
+                      link={item.link}
                     >
                       <LinkIcon />
                       <span className="text-lg">Ver Documento</span>

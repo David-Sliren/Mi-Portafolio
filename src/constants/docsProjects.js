@@ -1,7 +1,7 @@
 /* --Cuidado-- 
 Procure escribir los proyectos mas actuales arriba ya que la utilidad usada para alinear las imagenes se revierte para que se siga usando el patron implementado en la organizacion de los archivos  
 */
-export const documents = [
+export const projectsData = [
   {
     title: "Movie new",
     descripcion:

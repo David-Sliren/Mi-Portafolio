@@ -19,7 +19,7 @@ export const projectsData = [
   {
     title: "Memorma",
     descripcion:
-      "Desarrollé una aplicación de juego de memoria (Memorama) diseñada para ofrecer una experiencia de usuario fluida y demostrar una sólida comprensión de la arquitectura frontend moderna y la persistencia de datos. Este proyecto destaca la capacidad de construir lógica de aplicación compleja (seguimiento de pares, manejo de estado de volteo de cartas y puntuación) con un enfoque en el rendimiento óptimo.",
+      "Desarrollé una aplicación de juego de memoria (Memorama) diseñada para ofrecer una experiencia de usuario fluida y demostrar una sólida comprensión de la arquitectura frontend moderna y la persistencia de datos.",
     seeMore: "",
     tecnologies: ["React", "CSS", "Firebase"],
     link: "https://memoramasimple.netlify.app/",
@@ -27,7 +27,7 @@ export const projectsData = [
   {
     title: "Chat Ai",
     descripcion:
-      "Desarrollé una interfaz de chat conversacional de alto rendimiento, diseñada para interactuar con un servicio de inteligencia artificial. El foco principal de este proyecto fue la creación de una experiencia de usuario dinámica e intuitiva que simula un entorno de chat en tiempo real. Este desarrollo demuestra la capacidad para gestionar la interacción usuario-sistema de manera eficiente, manteniendo la estructura de la conversación y ofreciendo una presentación visual pulcra.",
+      "Desarrollé una interfaz de chat conversacional de alto rendimiento, diseñada para interactuar con un servicio de inteligencia artificial. El foco principal de este proyecto fue la creación de una experiencia de usuario dinámica e intuitiva que simula un entorno de chat en tiempo real.",
     seeMore: "",
     tecnologies: ["React", "CSS"],
     link: "https://chat-ai-p1.netlify.app/",

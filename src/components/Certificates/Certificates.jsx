@@ -15,9 +15,7 @@ function Certificates() {
               return (
                 <Card1
                   key={index}
-                  padding="p-6"
-                  flex="flex flex-col items-start gap-3"
-                  className="overflow-hidden"
+                  className="flex flex-col items-start gap-3 w-[90%] p-6  overflow-hidden"
                 >
                   <img src={item.src} alt="" />
 

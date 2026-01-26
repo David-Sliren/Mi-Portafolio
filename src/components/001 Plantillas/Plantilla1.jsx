@@ -1,8 +1,8 @@
-function Plantilla1({ title = "", children }) {
+function Plantilla1({ children, title = "", className = "" }) {
   return (
     <>
       <section
-        className={`flex flex-col px-4 w-full h-fit transition duration-600$`}
+        className={`flex flex-col px-4 w-full h-fit transition duration-600 ${className}`}
       >
         <h2 className="text-3xl text-sky-500 font-bold text-shadow-lg text-shadow-black mb-8">
           {title}

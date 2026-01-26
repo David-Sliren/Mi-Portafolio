@@ -12,22 +12,22 @@ import Experience from "../components/Experience/Experience";
 function Home() {
   return (
     <div className="container">
-      <div className="grid grid-rows-[auto_1fr] w-full md:w-[750px] min-h-full mx-auto">
-        <header className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
+      <main className="grid grid-rows-[auto_1fr] w-full md:w-[750px] min-h-full mx-auto">
+        <section className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
           <div className="w-full flex gap-4 items-center py-6 px-4 ">
             <Presentation />
           </div>
           <div className="w-full">
             <AboutMe />
           </div>
-        </header>
-        <main className="flex flex-col gap-15 bg-transparent overflow-x-hidden py-5 pb-10">
+        </section>
+        <section className="flex flex-col gap-15 bg-transparent overflow-x-hidden py-5 pb-10">
           <Experience />
           <Skills />
           <Proyects />
           <Certificates />
-        </main>
-      </div>
+        </section>
+      </main>
       <footer className="flex flex-col gap-2 items-center bg-zinc-900 p-4 py-6 min-w-full">
         <h2 className="text-2xl text-sky-500 font-bold">Contactame:</h2>
         <Icons1

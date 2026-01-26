@@ -5,7 +5,7 @@ import Plantilla1 from "../001 Plantillas/Plantilla1";
 function Experience() {
   return (
     <Plantilla1 title="Experiencia" className="pt-12">
-      <ol class="relative">
+      <ol className="relative">
         {EXPERIENCE.map((experience, i) => (
           <li key={i}>
             <ExperiencieItem {...experience} />

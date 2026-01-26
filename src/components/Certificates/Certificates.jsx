@@ -9,7 +9,7 @@ function Certificates() {
   return (
     <>
       <section>
-        <Plantilla1 title="Certificados">
+        <Plantilla1 title="Certificados" className="pt-12">
           <article className="flex flex-col gap-6 items-center w-full">
             {certificates.map((item, index) => {
               return (

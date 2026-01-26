@@ -7,11 +7,12 @@ import Icons1 from "../components/001 Plantillas/Icons1";
 
 import { Mail } from "lucide-react";
 import { Phone } from "lucide-react";
+import Experience from "../components/Experience/Experience";
 
 function Home() {
   return (
     <div className="container">
-      <div className="grid grid-rows-[auto_1fr] w-full md:w-[710px] min-h-full mx-auto">
+      <div className="grid grid-rows-[auto_1fr] w-full md:w-[750px] min-h-full mx-auto">
         <header className="flex flex-col gap-2 items-center border-white border-b-2 pb-6">
           <div className="w-full flex gap-4 items-center py-6 px-4 ">
             <Presentation />
@@ -21,6 +22,7 @@ function Home() {
           </div>
         </header>
         <main className="flex flex-col gap-15 bg-transparent overflow-x-hidden py-5 pb-10">
+          <Experience />
           <Skills />
           <Proyects />
           <Certificates />

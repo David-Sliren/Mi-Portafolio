@@ -1,10 +1,9 @@
-function Parrafos({
-  className = "text-white text-md text-shadow-2xs text-shadow-black",
-  children,
-}) {
+function Parrafos({ className = "", children }) {
   return (
     <>
-      <p className={`${className} transition duration-500 min-w-fit`}>
+      <p
+        className={`${className} text-gray-300 text-md transition duration-500 min-w-fit`}
+      >
         {children}
       </p>
     </>

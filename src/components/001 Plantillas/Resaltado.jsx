@@ -3,7 +3,7 @@ import React from "react";
 function Resaltado({ children }) {
   return (
     <>
-      <span className="text-sky-500 font-bold">{children}</span>
+      <strong className="text-sky-500">{children}</strong>
     </>
   );
 }

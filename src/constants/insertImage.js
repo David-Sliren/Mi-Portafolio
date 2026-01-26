@@ -2,7 +2,7 @@ import { utilsUnion } from "../utils/utils";
 import { projectsData } from "./docsProjects";
 import { certificateData } from "./docsCertificate";
 const projectsImg = import.meta.glob(
-  "../assets/image/proyects/*.{png,jpg,jpeg, webp}",
+  "../assets/image/proyects/*.{png,jpg,jpeg,webp}",
   {
     eager: true,
     query: "url",
@@ -10,7 +10,7 @@ const projectsImg = import.meta.glob(
 );
 
 const certificatesImg = import.meta.glob(
-  "../assets/image/certificates/*.{png,jpg,jpeg, webp}",
+  "../assets/image/certificates/*.{png,jpg,jpeg,webp}",
   {
     eager: true,
     query: "url",

@@ -1,4 +1,4 @@
-import Yo from "../../assets/image/Yo.jpg";
+import Yo from "../../assets/image/Yo.webp";
 import Contacts from "../001 Plantillas/Contacts";
 
 function Presentation() {

@@ -9,7 +9,7 @@ import { projects } from "../../constants/insertImage";
 function Proyects() {
   return (
     <>
-      <Plantilla1 title="Proyectos" className="pt-12">
+      <Plantilla1 title="Proyectos" className="pt-10">
         <article className=" flex flex-col items-center md:gap-10 md:scroll gap-14 perspective-midrange">
           {projects.map((item, i) => {
             return (

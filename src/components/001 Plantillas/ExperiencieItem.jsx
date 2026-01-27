@@ -1,8 +1,19 @@
-import React from "react";
+import { motion } from "motion/react";
 
 function ExperiencieItem({ title, company, date, description }) {
   return (
-    <div className="relative ml-10 pb-12 w-fit grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
+    <motion.div
+      initial={{
+        opacity: 0,
+        x: 40,
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+      }}
+      viewport={{ once: true }}
+      className="relative ml-10 pb-12 w-fit grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+    >
       <div className="relative pb-12 md:col-span-2">
         <div className="sticky top-0">
           <span className="text-sky-600 -left-[42px] absolute rounded-full text-5xl">
@@ -21,7 +32,7 @@ function ExperiencieItem({ title, company, date, description }) {
       <div className="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
         {description}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -11,5 +11,3 @@ function Img1({ img = "", alt = "" }) {
 }
 
 export default Img1;
-
-// ${isVisible ? "opacity-100 translate-Y-0" : "opacity-0 translate-y-10 "}

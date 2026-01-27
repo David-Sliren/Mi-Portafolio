@@ -1,17 +1,34 @@
 import Yo from "../../assets/image/Yo.webp";
 import Contacts from "../001 Plantillas/Contacts";
+import { motion } from "motion/react";
 
 function Presentation() {
   return (
     <>
-      <div
-        className={`overflow-hidden rounded-full border-dotted border-2 border-zinc-600 size-25 hover:scale-110 transition duration-500  `}
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -10,
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        className={`overflow-hidden rounded-full border-dotted border-2 border-zinc-600 size-25`}
       >
-        {/* ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10 "} */}
         <img className={`size-full object-cover`} src={Yo} alt="Hola" />
-      </div>
-      <section className={`flex flex-col transition duration-500 `}>
-        {/* ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10 "} */}
+      </motion.div>
+      <motion.section
+        initial={{
+          opacity: 0,
+          x: 10,
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+        }}
+        className={`flex flex-col `}
+      >
         <h2 className="text-2xl text-sky-500 font-extrabold text-shadow-2xs text-shadow-black">
           David Salazar Andulce
         </h2>
@@ -21,7 +38,7 @@ function Presentation() {
         </h3>
 
         <Contacts />
-      </section>
+      </motion.section>
     </>
   );
 }

@@ -12,5 +12,3 @@ function TitleAndParagraph({ title = "", text = "" }) {
 }
 
 export default TitleAndParagraph;
-
-// ${isVisible ? "opacity-100 translate-Y-0" : "opacity-0 translate-y-10 "}

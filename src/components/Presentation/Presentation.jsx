@@ -33,8 +33,10 @@ function Presentation() {
           David Salazar Andulce
         </h2>
         <h3 className="text-md  font-bold text-shadow-2xs text-shadow-black">
-          Desarrolador web |{" "}
-          <span className=" text-shadow-2xs text-shadow-black">React</span>
+          Desarrollador |{" "}
+          <span className=" text-shadow-2xs text-shadow-black">
+            React | React-Native
+          </span>
         </h3>
 
         <Contacts />

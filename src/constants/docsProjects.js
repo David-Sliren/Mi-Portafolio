@@ -3,6 +3,22 @@ Procure escribir los proyectos mas actuales arriba ya que la utilidad usada para
 */
 export const projectsData = [
   {
+    title: "Fútbol Mania",
+    descripcion:
+      "Este proyecto es una aplicación web completa para visualizar información de fútbol, incluyendo partidos en vivo, clasificaciones y competiciones. Está construido con una arquitectura moderna separando el frontend y el backend.",
+    seeMore: "",
+    tecnologies: [
+      "React",
+      "Tailwindcss",
+      "TanStack-Query",
+      "React-Router",
+      "Motion",
+      "Node js",
+      "Express js",
+    ],
+    link: "https://david-sliren.github.io/Futbol-Mania/",
+  },
+  {
     title: "Movie new",
     descripcion:
       "Desarrollé una aplicación Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).",

@@ -15,7 +15,7 @@ function Skills() {
     <>
       <section>
         <Plantilla1 title="Tecnologias">
-          <ClasificateSkills text="Lenguages">
+          <ClasificateSkills text="Languages ​​and Environments">
             <span className="flex gap-2 w-full">
               {iconsLenguages.map((item) => {
                 return (
@@ -36,7 +36,7 @@ function Skills() {
               })}
             </span>
           </ClasificateSkills>
-          <ClasificateSkills text="Frameworks y Libraries">
+          <ClasificateSkills text="Frameworks and Libraries">
             <span className="flex flex-wrap  gap-2 w-full ">
               {iconsLibrarys.map((item) => {
                 return (

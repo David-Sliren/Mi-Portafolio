@@ -19,19 +19,18 @@ const tools = import.meta.glob("../assets/icons/tools/*.svg", {
 Fijate en que el archivo este bien numerado para que concida con los nombres, la pocision del nombre depende de la posicion del archivo, por esa razon enumere los archivos para que coincidieran con los nombres
 */
 
-const lenguagesName = ["HTML", "CSS", "JavaScrpit"];
+const lenguagesName = ["HTML", "CSS", "JavaScrpit", "Node js"];
 
 const librarysName = [
   "React",
   "React-Native",
   "Expo",
-  "Node js",
+  "Express js",
   "React-Router",
   "TanStack-Query",
   "Tailwindcss",
   "Motion",
   "Firebase",
-  "Express js",
 ];
 
 const toolsName = ["Git", "Vite", "npm"];

@@ -19,7 +19,7 @@ export const projectsData = [
     link: "https://david-sliren.github.io/Futbol-Mania/",
   },
   {
-    title: "Movie new",
+    title: "Movies new",
     descripcion:
       "Desarrollé una aplicación Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).",
     seeMore: "",

@@ -1,41 +1,35 @@
-# Mi Portafolio
+# Portafolio Personal
 
-Este proyecto es un portafolio web personal desarrollado con **React** y **Vite**, diseñado para mostrar experiencia profesional, habilidades, proyectos y certificaciones de una manera moderna y responsiva.
+Este proyecto es un portafolio web personal desarrollado con **React** y **Vite**, diseñado para presentar experiencia profesional, habilidades, proyectos y certificaciones mediante una interfaz moderna, fluida y altamente responsiva.
 
-## 🚀 Tecnologías Utilizadas
+## 🚀 Tecnologías Principales
 
-El proyecto utiliza un stack moderno de desarrollo frontend:
+El proyecto se fundamenta en un stack tecnológico moderno:
 
-*   **[React 19](https://react.dev/)**: Biblioteca principal para la interfaz de usuario.
-*   **[Vite](https://vitejs.dev/)**: Entorno de desarrollo rápido y herramienta de construcción.
-*   **[Tailwind CSS 4](https://tailwindcss.com/)**: Framework de CSS para estilos rápidos y responsivos.
-*   **[Motion](https://motion.dev/)** (anteriormente Framer Motion): Para animaciones fluidas en la interfaz.
-*   **[Lucide React](https://lucide.dev/)**: Colección de iconos ligeros y consistentes.
-*   **[ESLint](https://eslint.org/)**: Para asegurar la calidad y consistencia del código.
+*   **[React 19](https://react.dev/)**: Interfaz de usuario basada en componentes.
+*   **[Vite](https://vitejs.dev/)**: Herramienta de construcción y entorno de desarrollo optimizado.
+*   **[Tailwind CSS 4](https://tailwindcss.com/)**: Estilos utility-first para un diseño ágil.
+*   **[Motion](https://motion.dev/)**: Animaciones declarativas y fluidas.
+*   **[React Icons](https://react-icons.github.io/react-icons/)**: Colección estandarizada de iconos.
 
 ## 📂 Estructura del Proyecto
 
-La estructura de carpetas está organizada de la siguiente manera:
+El código está organizado de forma modular para facilitar su mantenimiento y escalabilidad:
 
 ```text
 src/
-├── assets/          # Imágenes e iconos (SVG, WebP)
-├── components/      # Componentes de React reutilizables y secciones
-│   ├── 001 Plantillas/  # Componentes UI base (Cards, Botones, etc.)
-│   ├── about me/        # Sección "Sobre Mí"
-│   ├── Certificates/    # Sección de Certificados
-│   ├── Experience/      # Sección de Experiencia
-│   ├── Presentation/    # Sección de Presentación/Header
-│   ├── Proyects/        # Sección de Proyectos
-│   └── Skills/          # Sección de Habilidades
-├── constants/       # Datos estáticos para alimentar los componentes (JSON/JS Objects)
-├── pages/           # Páginas principales (Home.jsx)
-└── App.jsx          # Componente raíz
+├── assets/          # Imágenes (WebP) y recursos estáticos
+├── components/      # Componentes UI reutilizables y secciones del sitio
+├── constants/       # Datos maestros para contenido dinámico
+├── Layout/          # Componentes de layout y wrappers (HorizontalScroll)
+├── pages/           # Vistas de alto nivel (Home.jsx)
+├── utils/           # Funciones de utilidad auxiliares
+└── App.jsx          # Punto de entrada de la aplicación
 ```
 
-## 🛠️ Instalación y Configuración
+## 🛠️ Instalación y Desarrollo
 
-Este proyecto utiliza `pnpm` como gestor de paquetes (basado en el archivo `pnpm-lock.yaml`).
+Este proyecto utiliza `pnpm` como gestor de paquetes.
 
 1.  **Clonar el repositorio:**
     ```bash
@@ -47,9 +41,8 @@ Este proyecto utiliza `pnpm` como gestor de paquetes (basado en el archivo `pnpm
     ```bash
     pnpm install
     ```
-    *Si no tienes pnpm instalado, puedes instalarlo globalmente con `npm install -g pnpm` o usar `npm install` si prefieres npm.*
 
-3.  **Iniciar el servidor de desarrollo:**
+3.  **Desarrollo:**
     ```bash
     pnpm dev
     ```
@@ -57,33 +50,15 @@ Este proyecto utiliza `pnpm` como gestor de paquetes (basado en el archivo `pnpm
 
 ## 📜 Scripts Disponibles
 
-En el archivo `package.json` encontrarás los siguientes scripts:
-
 *   `pnpm dev`: Inicia el entorno de desarrollo local.
-*   `pnpm build`: Compila la aplicación para producción en la carpeta `dist`.
-*   `pnpm preview`: Vista previa local de la build de producción.
-*   `pnpm lint`: Ejecuta ESLint para buscar errores en el código.
-*   `pnpm deploy`: Despliega la aplicación en GitHub Pages (requiere configuración previa del repo remoto).
+*   `pnpm build`: Genera los archivos optimizados para producción en `/dist`.
+*   `pnpm preview`: Previsualización local del build de producción.
+*   `pnpm lint`: Ejecuta el análisis estático de código mediante ESLint.
 
 ## 📝 Gestión de Contenido
 
-El contenido del portafolio se gestiona principalmente a través de archivos en la carpeta `src/constants/`. Esto permite actualizar la información sin modificar la lógica de los componentes.
+El contenido del portafolio se gestiona de forma desacoplada en la carpeta `src/constants/`, permitiendo actualizaciones rápidas sin modificar la lógica de los componentes:
 
-*   `docsProjects.js`: Añadir o editar proyectos.
-*   `docsExperiencie.js`: Actualizar experiencia laboral.
-*   `docsCertificate.js`: Gestionar certificaciones mostradas.
-*   `constantsIcons.js`: Configuración de iconos.
-
-## 🌍 Despliegue
-
-El proyecto está configurado para desplegarse fácilmente en **GitHub Pages** usando el paquete `gh-pages`.
-
-Para desplegar una nueva versión:
-```bash
-pnpm run deploy
-```
-Esto ejecutará primero el build y luego subirá el contenido de la carpeta `dist` a la rama `gh-pages` de tu repositorio.
-
-## 👤 Autor
-
-Desarrollado por **David Sliren**.
+*   `docsProjects.js`: Catálogo de proyectos.
+*   `docsCertificate.js`: Certificaciones profesionales.
+*   `constantsIcons.js`: Mapeo de iconos y assets.

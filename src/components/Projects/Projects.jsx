@@ -21,7 +21,7 @@ const Projects = () => {
         </div>
         <div
           id="scroll-content"
-          className="flex overflow-y-hidden gap-4 px-8 py-2 snap-x snap-proximity scrollbar-hidden"
+          className="flex  gap-4 px-8 py-2 snap-x snap-proximity scrollbar-hidden overflow-y-hidden"
         >
           {projectsData.map((item) => (
             <ProjectCard

@@ -21,7 +21,7 @@ function Certificates() {
   return (
     <section
       id="education"
-      className="pt-32 pb-24 px-8 max-w-7xl mx-auto min-h-screen lg:px-0"
+      className="pt-32 pb-24 px-8 max-w-7xl mx-auto min-h-screen 2xl:px-0"
     >
       <section className="mb-20">
         <div className="flex flex-col gap-2 ">

@@ -11,7 +11,7 @@ const DEFAULT_VALUE = {
   containerStiki:
     "lg:sticky lg:top-0 flex items-center h-screen overflow-hidden",
   containerSlice: "flex",
-  range: ["0vw", "-65vw"],
+  range: ["0vw", "-100vw"],
 };
 
 const HorizontalScroll = ({

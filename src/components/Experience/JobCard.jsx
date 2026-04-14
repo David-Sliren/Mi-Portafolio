@@ -6,19 +6,19 @@ const JobCard = () => {
       <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
         <div className="flex-grow">
           <div className="flex items-center gap-3 mb-2">
-            <LuTerminal color="#abc7ff" />
-            <h3 className="font-headline text-2xl font-bold">
+            <LuTerminal color="#abc7ff" className="hidden sm:block" />
+            <h3 className="text-2xl font-bold">
               Desarrollador FullStack Multiplataforma
             </h3>
           </div>
-          <p className="text-lg font-medium mb-4 flex items-center gap-x-2 ">
-            <LuBriefcaseBusiness size={18} />
-            Freelancer independiente / Remote
+          <p className="text-md sm:text-lg text-white/60 font-medium mb-4 flex items-center gap-x-2 ">
+            <LuBriefcaseBusiness size={18} className="hidden sm:block" />
+            Freelancer independiente / Remoto
           </p>
           <div className="space-y-4 mb-6">
             <p className="text-neutral-500 text-sm font-medium leading-relaxed">
               Me especialice en la creación de interfaces web responsivas y
-              servicios backend escalables. Desarrollando de proyectos reales
+              servicios backend escalables. Desarrollando proyectos reales
               enfocados en productividad y experiencia de usuario, aplicando
               buenas prácticas de arquitectura, modularidad y rendimiento.
             </p>

@@ -1,5 +1,12 @@
 export const certificateData = [
   {
+    title: "Full Stack Development",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778214547/Certificado_parte_-_5_-_Helsinky_University_e6lcbv.png",
+    platform: "University Helsinki",
+    date: "mayo 6 2026",
+    link: "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/d646f70873e160d582452fda7b57b1ab",
+  },
+  {
     title: "Front-end Development Libraries",
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775860158/3dc538ae-12bd-4b65-ac2d-ca9d5f73e7c8.png",
     platform: "FreeCodeCamp",

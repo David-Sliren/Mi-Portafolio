@@ -11,6 +11,7 @@ const BentoCertificate = () => {
           imgsrc={item.img}
           place={item.platform}
           date={item.date}
+          link={item.link}
         />
       ))}
     </div>

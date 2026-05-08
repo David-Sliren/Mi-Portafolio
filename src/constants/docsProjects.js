@@ -3,6 +3,17 @@ Procure escribir los proyectos mas actuales arriba ya que la utilidad usada para
 */
 export const projectsData = [
   {
+    title: "Aleida | Contribucion",
+    descripcion:
+      "Este proyecto surgio por la necesidad de saber cuanto dinero se habia aportado para ayudar a mi abuela con su enfermedad y cual era el estado de sus medicinas y suplementos.",
+
+    platform: "Web",
+    stack: ["Next js", "MongoDB", "Tailwindcss", "Motion"],
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778212368/Aleida-Contribution_xjbdbg.png",
+    link: "https://aleida-contribucion.vercel.app/",
+  },
+
+  {
     title: "Tienda Sliren",
     descripcion:
       "El proyecto funciona como un portafolio interactivo y una tienda de aplicaciones, permitiendo a los usuarios explorar, conocer detalles y descargar las últimas versiones de las apps disponibles..",
@@ -46,13 +57,13 @@ export const projectsData = [
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775924100/04FutbolMania_eit1mo.webp",
     link: "https://david-sliren.github.io/Futbol-Mania/",
   },
-  {
-    title: "Movies new",
-    descripcion:
-      "Desarrollé una aplicación Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).",
-    platform: "Web",
-    stack: ["React", "Tailwindcss", "TanStack-Query", "React-Router", "Motion"],
-    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775924131/03MoviesNew_wulqbg.webp",
-    link: "https://david-sliren.github.io/movies-new/",
-  },
+  // {
+  //   title: "Movies new",
+  //   descripcion:
+  //     "Desarrollé una aplicación Una aplicación web moderna y reactiva para explorar catálogos de películas (Populares, Tendencias, Próximos estrenos) utilizando la API de The Movie Database (TMDB).",
+  //   platform: "Web",
+  //   stack: ["React", "Tailwindcss", "TanStack-Query", "React-Router", "Motion"],
+  //   img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775924131/03MoviesNew_wulqbg.webp",
+  //   link: "https://david-sliren.github.io/movies-new/",
+  // },
 ];

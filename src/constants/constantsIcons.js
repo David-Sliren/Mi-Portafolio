@@ -5,6 +5,7 @@ export const SkillsIcons = [
   { iconName: "SiCss", label: "CSS" },
   { iconName: "SiJavascript", label: "JavaScrpit" },
   { iconName: "SiTailwindcss", label: "Tailwindcss" },
+  { iconName: "SiNextdotjs", label: "Next js" },
   { iconName: "SiReact", label: "React" },
   { iconName: "SiReact", label: "React-Native" },
   { iconName: "SiReactrouter", label: "React-Router" },
@@ -14,6 +15,7 @@ export const SkillsIcons = [
   { iconName: "SiExpo", label: "Expo" },
   { iconName: "SiNodedotjs", label: "Node js" },
   { iconName: "SiExpress", label: "Express" },
+  { iconName: "SiMongodb", label: "MongoDB" },
 ];
 
 SkillsIcons.forEach((item) => SkillHash.set(item.label, item.iconName));

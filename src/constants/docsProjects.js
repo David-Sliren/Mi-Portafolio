@@ -3,7 +3,7 @@ Procure escribir los proyectos mas actuales arriba ya que la utilidad usada para
 */
 export const projectsData = [
   {
-    title: "Aleida | Contribucion",
+    title: "A | Contribucion",
     descripcion:
       "Este proyecto surgio por la necesidad de saber cuanto dinero se habia aportado para ayudar a mi abuela con su enfermedad y cual era el estado de sus medicinas y suplementos.",
 

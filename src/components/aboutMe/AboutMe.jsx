@@ -2,7 +2,10 @@ import Yo from "../../assets/image/Yo.webp";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-8  h-dvh pt-32">
+    <section
+      id="about"
+      className="max-w-7xl mx-auto px-8  min-h-dvh pt-32 pb-22"
+    >
       <div className="grid grid-col-1 lg:grid-cols-12 gap-16 items-center xl:px-0 content-center justify-items-center">
         <div className="col-span-full text-center  lg:col-span-8">
           <h1 className="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
@@ -12,13 +15,30 @@ const AboutMe = () => {
             </span>
             .
           </h1>
-          <p className="text-stone-300/85 text-xl md:text-2xl font-body leading-relaxed max-w-4xl mb-12 mx-auto timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
-            Desarrollador Full Stack JavaScript con experiencia en aplicaciones
-            web y móviles usando React, React Native y Node.js. He construido
-            soluciones bajo arquitectura cliente-servidor y aplicaciones móviles
-            con estado modular basado en slices utilizando Zustand. Actualmente
-            fortaleciendo conocimientos en SQL para implementar persistencia de
-            datos.
+          <p className="text-stone-300/85 text-left text-xs md:text-lg font-body leading-relaxed max-w-4xl mb-12 mx-auto timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
+            Desde que descubrí la programación, me enamoré de la libertad de
+            crear. Siempre me fascinó la idea de poder transformar una idea en
+            algo real, construir desde cero y dar vida a experiencias que antes
+            solo existían en la imaginación.
+            <br />
+            <br />
+            Disfruto especialmente diseñar aplicaciones que se sientan
+            organizadas, fluidas y agradables de usar. Me interesa la forma en
+            que una interfaz, una animación o una arquitectura bien pensada
+            pueden hacer que la tecnología deje de sentirse fría y se convierta
+            en una extensión natural de las personas.
+            <br />
+            <br />
+            Actualmente desarrollo aplicaciones web y móviles utilizando React,
+            Next.js, React Native y Node.js. He trabajado en proyectos con
+            arquitecturas modulares, sistemas de estado desacoplados usando
+            Zustand y aplicaciones estructuradas bajo modelo cliente-servidor
+            con Express y MongoDB.
+            <br />
+            <br />
+            Me apasiona aprender constantemente, resolver problemas complejos y
+            mejorar cada detalle de los proyectos que construyo, tanto a nivel
+            técnico como visual.
           </p>
           <div className="flex items-center space-x-8 justify-center">
             <div className="flex flex-col timeline-view animate-range-flash-entry animate-fade-blur animate-fill-mode-both">

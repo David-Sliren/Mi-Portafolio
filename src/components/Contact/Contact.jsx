@@ -23,7 +23,7 @@ const Contact = () => {
           <p className="text-[#c1c6d6] text-lg timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Estoy disponible para proyectos freelance, colaboraciones y
             oportunidades laborales remotas. Si tenés un proyecto en mente o
-            querés trabajar juntos, escribime.
+            querés que trabajemos juntos, escribime.
           </p>
         </div>
         {isClose ? (

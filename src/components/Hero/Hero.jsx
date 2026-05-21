@@ -26,9 +26,9 @@ const Hero = () => {
               </span>
             </h1>
             <p className="max-w-xl text-lg md:text-xl font-light leading-relaxed animate-fade-blur">
-              Cuento con experiencia en aplicaciones web y móviles.
-              Transformando ideas complejas en interfaces refinadas y
-              escalables.
+              Mi objetivo es crear aplicaciones que no solo funcionen bien, sino
+              que transmitan personalidad, elegancia y una experiencia genuina
+              para quienes las utilizan.
             </p>
             <div className="flex flex-wrap gap-6 pt-4">
               <a
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
       </div>
       {/* <!-- Scroll Indicator --> */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-bounce">
+      <div className="absolute bottom-0 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 animate-bounce">
         <span className="font-label text-[10px] uppercase tracking-widest text-outline/50">
           Scroll
         </span>

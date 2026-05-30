@@ -42,7 +42,7 @@ const Hero = () => {
                 </span>
               </a>
               <a
-                href="https://drive.google.com/file/d/1UNqy_s2PlQuyDCE3-GHvXuP2QZqaD8dU/view?usp=sharing"
+                href="https://drive.google.com/file/d/17XoOq4ZPa28ZTG6fuP99mSVizc9q2suA/view?usp=sharing"
                 target="_blank"
                 className="px-8 py-4 bg-neutral-700/20 text-primary font-bold rounded-xl border border-white/20 hover:bg-neutral-700/40 transition-all duration-300 active:scale-95 cursor-pointer animate-fade-blur"
               >

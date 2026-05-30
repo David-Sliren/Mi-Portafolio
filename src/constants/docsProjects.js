@@ -8,7 +8,7 @@ export const projectsData = [
       "Este proyecto surgio por la necesidad de saber cuanto dinero se habia aportado para ayudar a mi abuela con su enfermedad y cual era el estado de sus medicinas y suplementos.",
 
     platform: "Web",
-    stack: ["Next js", "MongoDB", "Tailwindcss", "Motion"],
+    stack: ["Next js", "MongoDB", "Mongoose", "Tailwindcss", "Motion"],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778212368/Aleida-Contribution_xjbdbg.png",
     link: "https://aleida-contribucion.vercel.app/",
   },
@@ -19,15 +19,7 @@ export const projectsData = [
       "El proyecto funciona como un portafolio interactivo y una tienda de aplicaciones, permitiendo a los usuarios explorar, conocer detalles y descargar las últimas versiones de las apps disponibles..",
 
     platform: "Web",
-    stack: [
-      "React",
-      "Tailwindcss",
-      "TanStack-Query",
-      "React-Router",
-      "Motion",
-      "Node js",
-      "Express",
-    ],
+    stack: ["React", "Tailwindcss", "React-Router", "Motion"],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775804567/2a18ffe2-0548-42f5-83a5-b89512446b00.png",
     link: "https://sliren-store.vercel.app/",
   },

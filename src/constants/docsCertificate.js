@@ -1,5 +1,26 @@
 export const certificateData = [
   {
+    title: "TypeScript",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1780105671/e328f146-4868-4a8e-b2b2-34aea33eb804.png",
+    platform: "University Helsinki",
+    date: "mayo 28 2026",
+    link: "https://console.cloudinary.com/app/c-894b89159437d7cd078e818e1d6603/assets/media_library/folders/cebcc12bd2092cc9cb7ecdee140e358563?view_mode=mosaic",
+  },
+  {
+    title: "React Router: Navagacion declarativa y framework",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1780105537/1d457588-1052-4a9c-bd36-45cd6efbfddd.png",
+    platform: "DevTalles",
+    date: "mayo 28 2026",
+    link: "https://cursos.devtalles.com/certificates/l1mmm5n7vs",
+  },
+  {
+    title: "TanStack Query - Un poderoso gestor de estado asincrono",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1780105506/5d158d4c-de05-445c-a9c1-53d8b88ad3d9.png",
+    platform: "DevTalles",
+    date: "mayo 28 2026",
+    link: "https://cursos.devtalles.com/certificates/igelo7txkh",
+  },
+  {
     title: "Full Stack Development",
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778214547/Certificado_parte_-_5_-_Helsinky_University_e6lcbv.png",
     platform: "University Helsinki",

@@ -4,7 +4,7 @@ export const certificateData = [
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1780105671/e328f146-4868-4a8e-b2b2-34aea33eb804.png",
     platform: "University Helsinki",
     date: "mayo 28 2026",
-    link: "https://console.cloudinary.com/app/c-894b89159437d7cd078e818e1d6603/assets/media_library/folders/cebcc12bd2092cc9cb7ecdee140e358563?view_mode=mosaic",
+    link: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/c65a5ced9c79fe1fc5c5abb9ef8a0f94",
   },
   {
     title: "React Router: Navagacion declarativa y framework",

@@ -26,12 +26,12 @@
     animation-range: 0% 30%;
   }
 
-  .mask-img-animate {
+  /* .mask-img-animate {
     mask-image: url(https://res.cloudinary.com/dudiot7uv/image/upload/v1775965899/animate-Entry_2_vfqymu.webp);
     mask-position: center;
     mask-size: cover;
     mask-repeat: no-repeat;
-  }
+  } */
 }
 
 * {

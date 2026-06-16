@@ -28,7 +28,7 @@ const Navbar = () => {
   });
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#121315]/60 backdrop-blur-xl no-border bg-gradient-to-b from-[#121315] to-transparent mask-img-animate">
+    <nav className="fixed top-0 w-full z-50 bg-[#121315]/60 backdrop-blur-xl no-border bg-gradient-to-b from-[#121315] to-transparent mask-img-animate animate-fade-in-down">
       <article className="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
         <a href="#">
           <div className="flex justify-center items-center gap-2 text-xl font-bold tracking-tighter text-[#e3e2e4] font-headline">

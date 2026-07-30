@@ -12,6 +12,14 @@ const list = [
   { href: "#about", label: "Sobre mi" },
 ];
 
+const listMobile = [
+  { href: "#experience", label: "Experiencia" },
+  { href: "#skills", label: "Habilidades" },
+  { href: "#projectsMobile", label: "Proyectos" },
+  { href: "#education", label: "Educacion" },
+  { href: "#about", label: "Sobre mi" },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [hash, sethash] = useState(window.location.hash);
@@ -67,7 +75,7 @@ const Navbar = () => {
         className={`flex md:hidden items-center ${isOpen ? "h-fit opacity-100" : "h-0 opacity-0"}`}
       >
         <ul className="grid grid-cols-3 sm:grid-cols-6 gap-x-1 sm:gap-0 pb-2 place-items-center w-full">
-          {list.map((item) => (
+          {listMobile.map((item) => (
             <a
               href={item.href}
               key={item.href}

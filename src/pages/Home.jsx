@@ -7,6 +7,7 @@ import Projects from "../components/Projects/Projects";
 import Hero from "../components/Hero/Hero";
 import Certificates from "../components/Certificates/Certificates";
 import Footer from "../components/ui/Footer";
+import ProjectsMobile from "../components/Projects/ProjectsMobile";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <Experience />
         <Skills />
         <Projects />
+        <ProjectsMobile />
         <Certificates />
         <AboutMe />
         <Contact />

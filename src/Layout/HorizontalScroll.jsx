@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const DEFAULT_VALUE = {
-  containerPricipal: " relative lg:h-[300vh] ",
+  containerPricipal: " relative lg:h-[510vh] ",
   containerStiki:
     "lg:sticky lg:top-0 flex items-center h-screen overflow-hidden",
   containerSlice: "flex",
@@ -17,7 +17,6 @@ const DEFAULT_VALUE = {
 const HorizontalScroll = ({
   id,
   children,
-  classNameCP,
   stikyClassName,
   slideClassName,
   range = [],
@@ -46,7 +45,7 @@ const HorizontalScroll = ({
     <div
       id={id}
       ref={refScroll}
-      className={classNameCP ? classNameCP : DEFAULT_VALUE.containerPricipal}
+      className={`hidden md:block ${DEFAULT_VALUE.containerPricipal}`}
     >
       <article
         className={

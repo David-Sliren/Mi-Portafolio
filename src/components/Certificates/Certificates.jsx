@@ -29,12 +29,12 @@ function Certificates() {
           <span className="font-label text-primary tracking-[0.2em] text-[10px] uppercase timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Validación Técnica
           </span>
-          <h1 className="text-5xl md:text-5xl font-bold font-headline tracking-tighter text-on-surface leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
+          <h2 className="text-5xl md:text-5xl font-bold font-headline tracking-tighter text-on-surface leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Certificaciones{" "}
             <span className="bg-gradient-blue bg-clip-text text-transparent">
               Profesionales
             </span>
-          </h1>
+          </h2>
         </div>
         <div className="mt-8 max-w-2xl">
           <p className="text-lg text-on-surface-variant font-body timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">

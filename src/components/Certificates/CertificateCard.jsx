@@ -11,7 +11,9 @@ const CertificateCard = ({ title, description, place, date, imgsrc, link }) => {
       <div className="w-full h-20 rounded-lg m-auto mb-6 flex items-center justify-center overflow-hidden">
         <img
           className="size-full object-cover object-top"
-          alt={title}
+          alt={`Certificado ${title} de ${place}`}
+          loading="lazy"
+          decoding="async"
           src={imgsrc}
         />
       </div>

@@ -8,13 +8,13 @@ const AboutMe = () => {
     >
       <div className="grid grid-col-1 lg:grid-cols-12 gap-16 items-center xl:px-0 content-center justify-items-center">
         <div className="col-span-full text-center  lg:col-span-8">
-          <h1 className="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
+          <h2 className="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Sobre{" "}
             <span className="bg-gradient-blue text-transparent bg-clip-text timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
               mí
             </span>
             .
-          </h1>
+          </h2>
           <p className="text-stone-300/85 text-left text-xs md:text-lg font-body leading-relaxed max-w-4xl mb-12 mx-auto timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Desde que descubrí la programación, me enamoré de la libertad de
             crear. Siempre me fascinó la idea de poder transformar una idea en
@@ -64,7 +64,9 @@ const AboutMe = () => {
         <article className="hidden lg:block col-span-full lg:col-span-4 lg:size-80 overflow-hidden timeline-view animate-range-early-entry animate-fade-in-up animate-fill-mode-both timeline-view mask-img-animate">
           <img
             src={Yo}
-            alt="imagen"
+            alt="Fotografía de David Salazar, Desarrollador Full Stack"
+            loading="lazy"
+            decoding="async"
             className="size-full object-cover object-top rounded-full"
           />
         </article>

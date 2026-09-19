@@ -20,6 +20,8 @@ const ProjectCard = ({
     >
       <img
         alt={imgAlt}
+        loading="lazy"
+        decoding="async"
         className="aspect-video sm:absolute sm:inset-0 sm:w-full sm:h-full object-center object-cover transition-transform duration-1000 group-hover:scale-110"
         src={imgSrc}
       />

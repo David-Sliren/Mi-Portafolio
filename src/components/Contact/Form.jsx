@@ -66,7 +66,7 @@ const Form = ({ handler }) => {
         </label>
         <textarea
           className="w-full bg-[#1b1c1e] border border-[#414753]/20 focus:border-[#0071E3] focus:ring-1 focus:ring-[#0071E3] rounded-xl p-4 text-[#e3e2e4] placeholder:text-[#c1c6d6]/30 transition-all resize-none outline-none "
-          placeholder="Hablame sobre tu projecto.."
+          placeholder="Háblame sobre tu proyecto..."
           rows="5"
           name="order"
           required

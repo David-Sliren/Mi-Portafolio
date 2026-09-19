@@ -1,21 +1,21 @@
-/* --Cuidado-- 
-Procure escribir los proyectos mas actuales arriba ya que la utilidad usada para alinear las imagenes se revierte para que se siga usando el patron implementado en la organizacion de los archivos  
+/* --Cuidado--
+Procure escribir los proyectos más actuales arriba, ya que la utilidad usada para alinear las imágenes se revierte para que se siga usando el patrón implementado en la organización de los archivos.
 */
 export const projectsData = [
   {
-    title: "Aleida | Contribucion",
+    title: "Aleida | Contribución",
     descripcion:
       "Aplicación web que permite a una comunidad o grupo familiar financiar colectivamente los gastos de un paciente, monitorear en tiempo real sus medicamentos y gestionar los pagos de sus cuidadores con roles de acceso transparentes.",
     platform: "Web",
-    stack: ["Next js", "MongoDB", "Mongoose", "Tailwindcss", "Motion"],
+    stack: ["Next.js", "MongoDB", "Mongoose", "Tailwindcss", "Motion"],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778212368/Aleida-Contribution_xjbdbg.png",
     link: "https://aleida-contribucion.vercel.app/",
   },
   {
     title: "Renpentain",
     descripcion:
-      "Aplicacion movil diseñada para simplificar y organizar las listas de compras y las visitas al supermercado de forma eficiente.",
-    platform: "Mobil",
+      "Aplicación móvil diseñada para simplificar y organizar las listas de compras y las visitas al supermercado de forma eficiente.",
+    platform: "Móvil",
     stack: ["React", "Tailwindcss", "TanStack-Query", "React-Router", "Motion"],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775803312/0f4a658a-804d-4294-8b3d-43d4839c7cd3.png",
     link: "https://renpentain.uptodown.com/android",
@@ -23,7 +23,7 @@ export const projectsData = [
   {
     title: "Chocolate Andalucia",
     descripcion:
-      "Landing page para aumentar las ventas de los cupos de una pasadia en la finca de la fabrica chocolate andaluz",
+      "Landing page para aumentar las ventas de los cupos de una pasadía en la finca de la fábrica chocolate andaluz",
 
     platform: "Web",
     stack: ["React", "Tailwindcss", "Motion"],
@@ -34,7 +34,7 @@ export const projectsData = [
   {
     title: "Tienda Sliren",
     descripcion:
-      "Portafolio interactivo y tienda de aplicaciones, que permite a los usuarios explorar, conocer detalles y descargar las últimas versiones de mis aplicaciones moviles",
+      "Portafolio interactivo y tienda de aplicaciones, que permite a los usuarios explorar, conocer detalles y descargar las últimas versiones de mis aplicaciones móviles",
 
     platform: "Web",
     stack: ["React", "Tailwindcss", "React-Router", "Motion"],
@@ -53,7 +53,7 @@ export const projectsData = [
   //     "TanStack-Query",
   //     "React-Router",
   //     "Motion",
-  //     "Node js",
+  //     "Node.js",
   //     "Express",
   //   ],
   //   img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775924100/04FutbolMania_eit1mo.webp",

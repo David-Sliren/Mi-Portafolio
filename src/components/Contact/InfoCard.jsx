@@ -9,7 +9,7 @@ const InfoCard = ({ handler }) => {
       </article>
       <article className="flex flex-col justify-center items-center gap-y-6">
         <p className="bg-gradient-blue bg-clip-text text-transparent text-md sm:text-xl text-center font-semibold leading-relaxed">
-          Gracias, en menos de 24 horas me pondre en contacto contigo
+          Gracias, en menos de 24 horas me pondré en contacto contigo
         </p>
         <button
           onClick={handler}

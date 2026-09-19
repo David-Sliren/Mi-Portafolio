@@ -46,7 +46,7 @@ const AboutMe = () => {
                 2+
               </span>
               <span className="text-xs uppercase tracking-widest text-on-surface-variant">
-                Años de Exp
+                Años de experiencia
               </span>
             </div>
             <div className="w-px h-10 bg-gradient-blue" />

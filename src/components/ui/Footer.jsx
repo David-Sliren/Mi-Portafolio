@@ -10,7 +10,7 @@ const listIcon = [
   {
     iconName: "LuGithub",
     link: "https://github.com/David-Sliren",
-    label: "Github",
+    label: "GitHub",
   },
   {
     iconName: "LuTwitter",

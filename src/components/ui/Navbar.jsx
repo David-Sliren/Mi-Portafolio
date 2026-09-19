@@ -8,16 +8,16 @@ const list = [
   { href: "#experience", label: "Experiencia" },
   { href: "#skills", label: "Habilidades" },
   { href: "#projects", label: "Proyectos" },
-  { href: "#education", label: "Educacion" },
-  { href: "#about", label: "Sobre mi" },
+  { href: "#education", label: "Educación" },
+  { href: "#about", label: "Sobre mí" },
 ];
 
 const listMobile = [
   { href: "#experience", label: "Experiencia" },
   { href: "#skills", label: "Habilidades" },
   { href: "#projectsMobile", label: "Proyectos" },
-  { href: "#education", label: "Educacion" },
-  { href: "#about", label: "Sobre mi" },
+  { href: "#education", label: "Educación" },
+  { href: "#about", label: "Sobre mí" },
 ];
 
 const Navbar = () => {

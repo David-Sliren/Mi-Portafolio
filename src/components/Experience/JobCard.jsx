@@ -7,7 +7,7 @@ const JobCard = () => {
         <div className="flex-grow">
           <div className="flex items-center gap-3 mb-2">
             <LuTerminal color="#abc7ff" className="hidden sm:block" />
-            <h3 className="text-2xl font-bold">Desarrollador FullStack</h3>
+            <h3 className="text-2xl font-bold">Desarrollador Full Stack</h3>
           </div>
           <p className="text-md sm:text-lg text-white/60 font-medium mb-4 flex items-center gap-x-2 ">
             <LuBriefcaseBusiness size={18} className="hidden sm:block" />
@@ -18,7 +18,7 @@ const JobCard = () => {
               Desde 2024, he desarrollado múltiples proyectos personales,
               profesionales y académicos, adquiriendo experiencia en el diseño,
               desarrollo e implementación de aplicaciones web y móviles. He
-              trabajado con tecnologías como JavaScript, Typescript, Node.js,
+              trabajado con tecnologías como JavaScript, TypeScript, Node.js,
               React.js, React Native, Next.js y MongoDB, aplicando buenas
               prácticas de desarrollo, patrones de diseño y principios de
               arquitectura de software. Cuento con amplia experiencia
@@ -28,7 +28,7 @@ const JobCard = () => {
           </div>
           <div className="bg-shark-900/80 p-2 rounded-xl">
             <p className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-4">
-              Responsabilidades :
+              Responsabilidades:
             </p>
             <ul className="text-sm text-on-surface-variant space-y-2">
               <li className="flex items-start">

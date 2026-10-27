@@ -1,5 +1,14 @@
 import { LuCircleCheck, LuBriefcaseBusiness, LuTerminal } from "react-icons/lu";
 
+const achievements = [
+  "Desarrollo un sistema de gestión de calificaciones para un profesor independiente que trabaja en varios institutos, centralizando el registro y seguimiento del rendimiento de sus estudiantes.",
+  "Construí y mantengo Aleida Contribución, una aplicación web con 20 a 30 usuarios activos, con control de accesos por roles y conciliación financiera.",
+  "Reduje en un 40% los re-renders innecesarios con arquitecturas de estado modulares usando Zustand (slices).",
+  "Optimicé una SPA con Vite, React y TypeScript hasta un score de 97 en Lighthouse, resolviendo además bugs críticos de navegación en dispositivos móviles.",
+  "Garantizo la integridad de los datos en producción con esquemas y validaciones de Mongoose sobre MongoDB.",
+  "Publiqué Renpentain, una aplicación móvil de listas de compras disponible en Uptodown.",
+];
+
 const JobCard = () => {
   return (
     <div className="bg-shark-600/10 rounded-3xl p-8 border border-white/20 hover:border-white/50 transition-all duration-500 group timeline-view animate-range-[entry_10%_cover_40%] animate-fade-in-right">
@@ -11,50 +20,29 @@ const JobCard = () => {
           </div>
           <p className="text-md sm:text-lg text-white/60 font-medium mb-4 flex items-center gap-x-2 ">
             <LuBriefcaseBusiness size={18} className="hidden sm:block" />
-            Freelancer profesional
+            Freelance profesional independiente · Remoto
           </p>
           <div className="space-y-4 mb-6">
-            <p className="text-neutral-500 text-sm font-medium leading-relaxed">
-              Desde 2024, he desarrollado múltiples proyectos personales,
-              profesionales y académicos, adquiriendo experiencia en el diseño,
-              desarrollo e implementación de aplicaciones web y móviles. He
-              trabajado con tecnologías como JavaScript, TypeScript, Node.js,
-              React.js, React Native, Next.js y MongoDB, aplicando buenas
-              prácticas de desarrollo, patrones de diseño y principios de
-              arquitectura de software. Cuento con amplia experiencia
-              desarrollando software, aunque aún no he trabajado en una empresa
-              formalmente.
+            <p className="text-neutral-300 text-sm font-medium leading-relaxed">
+              Desde 2024 diseño, desarrollo y despliego aplicaciones web y
+              móviles de principio a fin, en proyectos propios y para clientes
+              reales: frontend, backend y producción, con JavaScript,
+              TypeScript, React, Next.js, Node.js y Python.
             </p>
           </div>
           <div className="bg-shark-900/80 p-2 rounded-xl">
             <p className="text-xs font-bold uppercase tracking-widest text-blue-300 mb-4">
-              Responsabilidades:
+              Logros destacados:
             </p>
             <ul className="text-sm text-on-surface-variant space-y-2">
-              <li className="flex items-start">
-                <span className="material-symbols-outlined text-xs mt-1 mr-2 text-primary">
-                  <LuCircleCheck size={10} className="text-blue-300" />
-                </span>{" "}
-                Participé en el desarrollo de software corporativo,
-                implementando nuevas funcionalidades con React.js (frontend) y
-                Node.js (backend), junto con MongoDB para gestión de datos.
-              </li>
-              <li className="flex items-start">
-                <span className="material-symbols-outlined text-xs mt-1 mr-2 text-primary">
-                  <LuCircleCheck size={10} className="text-blue-300" />
-                </span>{" "}
-                Optimicé procesos, resolví incidencias técnicas y di soporte
-                continuo a las historias de usuario en cada sprint, aplicando
-                metodologías ágiles (Scrum/Jira) y control de versiones con Git.
-              </li>
-              <li className="flex items-start">
-                <span className="material-symbols-outlined text-xs mt-1 mr-2 text-primary">
-                  <LuCircleCheck size={10} className="text-blue-300" />
-                </span>{" "}
-                Contribuí tanto a la mejora de módulos existentes como a la
-                creación de nuevos, enfocado en el aprendizaje constante y el
-                crecimiento profesional.
-              </li>
+              {achievements.map((item) => (
+                <li key={item} className="flex items-start">
+                  <span className="material-symbols-outlined text-xs mt-1 mr-2 text-primary">
+                    <LuCircleCheck size={10} className="text-blue-300" />
+                  </span>{" "}
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

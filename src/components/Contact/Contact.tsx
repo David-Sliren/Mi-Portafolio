@@ -22,8 +22,8 @@ const Contact = () => {
           </h2>
           <p className="text-[#c1c6d6] text-lg timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Estoy disponible para proyectos freelance, colaboraciones y
-            oportunidades laborales remotas. Si tenés un proyecto en mente o
-            querés que trabajemos juntos, escribime.
+            oportunidades laborales remotas. Si tu proyecto necesita a alguien
+            que lo lleve de la idea a producción y se haga cargo, hablemos.
           </p>
         </div>
         {isClose ? (

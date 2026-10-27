@@ -30,11 +30,10 @@ const AboutMe = () => {
             en una extensión natural de las personas.
             <br />
             <br />
-            Actualmente desarrollo aplicaciones web y móviles utilizando React,
-            Next.js, React Native y Node.js. He trabajado en proyectos con
-            arquitecturas modulares, sistemas de estado desacoplados usando
-            Zustand y aplicaciones estructuradas bajo modelo cliente-servidor
-            con Express y MongoDB.
+            Soy desarrollador Full Stack con foco en JavaScript y TypeScript
+            (React, Next.js, Node.js), y ampliando mi stack hacia Python con
+            FastAPI. Diseño y despliego aplicaciones web y móviles de principio
+            a fin: arquitectura, backend, frontend y producción.
             <br />
             <br />
             Me apasiona aprender constantemente, resolver problemas complejos y

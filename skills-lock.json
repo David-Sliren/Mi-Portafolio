@@ -11,6 +11,12 @@
       "sourceType": "autoskills-registry",
       "computedHash": "c124390cc3441844903ada94cb5820b23d922f2d0ad34e01e029e410197c8a32"
     },
+    "empirical-plan": {
+      "source": "David-Sliren/empirical-plan",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "d10da5a6797f606afed3ce8666569597e4430550445d293b1efee57bfea811fe"
+    },
     "frontend-design": {
       "source": "anthropics/skills",
       "sourceType": "autoskills-registry",

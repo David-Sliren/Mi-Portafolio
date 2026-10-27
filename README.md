@@ -1,64 +1,42 @@
-# Portafolio Personal
+# Sliren.dev — Portafolio Personal
 
-Este proyecto es un portafolio web personal desarrollado con **React** y **Vite**, diseñado para presentar experiencia profesional, habilidades, proyectos y certificaciones mediante una interfaz moderna, fluida y altamente responsiva.
+Portafolio web profesional de David Salazar, Desarrollador Full Stack. Construido con [Next.js 16](https://nextjs.org) (App Router), React 19, TypeScript y Tailwind CSS.
 
-## 🚀 Tecnologías Principales
+## Características
 
-El proyecto se fundamenta en un stack tecnológico moderno:
+- ⚡ **Next.js 16 App Router & Turbopack** para un renderizado y desarrollo ultra rápido.
+- 🎨 **Tailwind CSS & Motion (Framer Motion)** para estilos modernos y animaciones fluidas.
+- 📱 **Diseño 100% responsivo**, adaptado para móviles, tablets y pantallas de escritorio.
+- 📬 **Formulario de contacto interactivo** integrado con EmailJS.
+- 📜 **Estructura modular en TypeScript** con tipado estático ligero y componentes desacoplados.
 
-*   **[React 19](https://react.dev/)**: Interfaz de usuario basada en componentes.
-*   **[Vite](https://vitejs.dev/)**: Herramienta de construcción y entorno de desarrollo optimizado.
-*   **[Tailwind CSS 4](https://tailwindcss.com/)**: Estilos utility-first para un diseño ágil.
-*   **[Motion](https://motion.dev/)**: Animaciones declarativas y fluidas.
-*   **[React Icons](https://react-icons.github.io/react-icons/)**: Colección estandarizada de iconos.
+## Comenzar
 
-## 📂 Estructura del Proyecto
+1. Instalar dependencias con `pnpm`:
 
-El código está organizado de forma modular para facilitar su mantenimiento y escalabilidad:
-
-```text
-src/
-├── assets/          # Imágenes (WebP) y recursos estáticos
-├── components/      # Componentes UI reutilizables y secciones del sitio
-├── constants/       # Datos maestros para contenido dinámico
-├── Layout/          # Componentes de layout y wrappers (HorizontalScroll)
-├── pages/           # Vistas de alto nivel (Home.jsx)
-├── utils/           # Funciones de utilidad auxiliares
-└── App.jsx          # Punto de entrada de la aplicación
+```bash
+pnpm install
 ```
 
-## 🛠️ Instalación y Desarrollo
+2. Configurar variables de entorno en `.env`:
 
-Este proyecto utiliza `pnpm` como gestor de paquetes.
+```env
+NEXT_PUBLIC_EMAIL_USER_ID=tu_user_id
+NEXT_PUBLIC_EMAIL_SERVICES_ID=tu_service_id
+NEXT_PUBLIC_EMAIL_TEMPLATE_ID=tu_template_id
+```
 
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd Mi-Portafolio
-    ```
+3. Iniciar el servidor de desarrollo:
 
-2.  **Instalar dependencias:**
-    ```bash
-    pnpm install
-    ```
+```bash
+pnpm dev
+```
 
-3.  **Desarrollo:**
-    ```bash
-    pnpm dev
-    ```
-    La aplicación estará disponible en `http://localhost:5173`.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-## 📜 Scripts Disponibles
+## Scripts Disponibles
 
-*   `pnpm dev`: Inicia el entorno de desarrollo local.
-*   `pnpm build`: Genera los archivos optimizados para producción en `/dist`.
-*   `pnpm preview`: Previsualización local del build de producción.
-*   `pnpm lint`: Ejecuta el análisis estático de código mediante ESLint.
-
-## 📝 Gestión de Contenido
-
-El contenido del portafolio se gestiona de forma desacoplada en la carpeta `src/constants/`, permitiendo actualizaciones rápidas sin modificar la lógica de los componentes:
-
-*   `docsProjects.js`: Catálogo de proyectos.
-*   `docsCertificate.js`: Certificaciones profesionales.
-*   `constantsIcons.js`: Mapeo de iconos y assets.
+- `pnpm dev` — Inicia el entorno de desarrollo con Turbopack.
+- `pnpm build` — Compila la aplicación y genera el bundle de producción en `.next/`.
+- `pnpm start` — Inicia el servidor de producción.
+- `pnpm lint` — Ejecuta ESLint para verificar el estilo y sintaxis del código.

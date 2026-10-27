@@ -13,7 +13,14 @@ export const projectsData: ProjectItem[] = [
     descripcion:
       "Aplicación web que permite a una comunidad o grupo familiar financiar colectivamente los gastos de un paciente, monitorear en tiempo real sus medicamentos y gestionar los pagos de sus cuidadores con roles de acceso transparentes.",
     platform: "Web",
-    stack: ["Next.js", "MongoDB", "Mongoose", "Tailwindcss", "Motion"],
+    stack: [
+      "Next.js",
+      "MongoDB",
+      "Mongoose",
+      "Betterauth",
+      "Tailwindcss",
+      "Motion",
+    ],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778212368/Aleida-Contribution_xjbdbg.png",
     link: "https://aleida-contribucion.vercel.app/",
   },

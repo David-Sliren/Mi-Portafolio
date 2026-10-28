@@ -1,7 +1,4 @@
-import { ComponentType } from "react";
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
-import * as iconLibSI from "react-icons/si";
-import * as iconLibTb from "react-icons/tb";
 import { fullSkill } from "../../constants/constantsIcons";
 
 interface ProjectCardProps {

@@ -1,11 +1,5 @@
-import { ComponentType } from "react";
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
-import * as iconLibSI from "react-icons/si";
-import * as iconLibTb from "react-icons/tb";
-import { SkillHash } from "../../constants/constantsIcons";
-
-const siIcons = iconLibSI as Record<string, ComponentType<{ className?: string }>>;
-const tbIcons = iconLibTb as Record<string, ComponentType<{ className?: string }>>;
+import { fullSkill } from "../../constants/constantsIcons";
 
 interface ProjectCardProps {
   title: string;
@@ -65,13 +59,12 @@ const ProjectCard = ({
           </span>
         </button>
         <span className="absolute bottom-2 grid grid-cols-5 gap-y-2  w-11/12 max-h-[38%] min-h-[30%] py-2 place-items-center overflow-x-hidden scrollbar-hidden z-0 ">
-          {stack.map((item) => {
-            const iconName = SkillHash.get(item);
-            const IconComponent = (iconName ? (siIcons[iconName] || tbIcons[iconName]) : null);
-            return IconComponent ? (
-              <IconComponent key={item} className="text-2xl" />
-            ) : (
-              <span key={item}>error</span>
+          {stack.map((stackItem) => {
+            const Icon = fullSkill.find((item) => item.label === stackItem);
+            return (
+              <div key={stackItem} className="text-2xl">
+                {Icon ? <Icon.icon /> : "error"}
+              </div>
             );
           })}
         </span>

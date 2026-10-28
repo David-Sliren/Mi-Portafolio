@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tailwind-animations";
-@theme {
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
   --background-image-gradient-blue: linear-gradient(125deg, #abc7ff, #0071e3);
   --color-shark-50: #fafafa;
   --color-shark-100: #f4f4f5;

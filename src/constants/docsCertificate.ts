@@ -8,6 +8,13 @@ export interface CertificateItem {
 
 export const certificateData: CertificateItem[] = [
   {
+    title: "SQL",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1793232908/Captura_desde_2026-10-28_19-14-43_noifxu.png",
+    platform: "Aprende SQL",
+    date: "octubre 27 de 2026",
+    link: "https://drive.google.com/file/d/1Sjp6mHQ69_0p6VKANlwZaJSaG6q0boeV/view?usp=sharing",
+  },
+  {
     title: "TypeScript",
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1780105671/e328f146-4868-4a8e-b2b2-34aea33eb804.png",
     platform: "University Helsinki",
@@ -55,5 +62,19 @@ export const certificateData: CertificateItem[] = [
     platform: "FreeCodeCamp",
     date: "Enero 27 de 2025",
     link: "https://www.freecodecamp.org/certification/david-sliren/responsive-web-design",
+  },
+  {
+    title: "ENGLISH DOES WORK - LEVEL 2",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1793233787/Captura_desde_2026-10-28_19-29-20_iskhsi.png",
+    platform: "SENA",
+    date: "octubre 13 de 2024",
+    link: "https://drive.google.com/file/d/1MHIFmPSc_a-xXes_M3XKJqcSRb6zWTHy/view?usp=sharing",
+  },
+  {
+    title: "ENGLISH DOES WORK - LEVEL 1",
+    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1793233075/Captura_desde_2026-10-28_19-17-40-1_pgwxxn.png",
+    platform: "SENA",
+    date: "mayo 21 de 2024",
+    link: "https://drive.google.com/file/d/1jxGoJso8aOpkBlT_FmJ-hfJXIRNoIuaB/view?usp=sharing",
   },
 ];

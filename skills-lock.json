@@ -42,6 +42,12 @@
       "sourceType": "autoskills-registry",
       "computedHash": "c184da724d1c61ad077f27418ea8e7e88fd54bcdf98165e18be7e4681cbd5e20"
     },
+    "shaders": {
+      "source": "shader-effects-inc/shaders",
+      "sourceType": "github",
+      "skillPath": "skills/shaders/SKILL.md",
+      "computedHash": "99b832c3d9e4d38b6ebbea55c7b80905e3ebb4a9e507d01e5ef8f0d538be6d3f"
+    },
     "tailwind-css-patterns": {
       "source": "giuseppe-trisciuoglio/developer-kit",
       "sourceType": "autoskills-registry",

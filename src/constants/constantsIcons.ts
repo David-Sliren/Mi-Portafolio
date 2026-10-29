@@ -125,4 +125,3 @@ export const skillCategories: SkillCategory[] = [
 export const fullSkill: Skill[] = skillCategories.flatMap(
   (item) => item.skills,
 );
-console.log("fullSkill2: ", fullSkill);

@@ -29,7 +29,7 @@ const Certificates = () => {
           <span className="font-label text-primary tracking-[0.2em] text-[10px] uppercase timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
             Validación Técnica
           </span>
-          <h2 className="text-5xl md:text-5xl font-bold font-headline tracking-tighter text-on-surface leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
+          <h2 className="text-4xl md:text-4xl xl:text-5xl font-bold font-headline tracking-tighter text-on-surface leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both uppercase">
             Certificaciones{" "}
             <span className="bg-gradient-blue bg-clip-text text-transparent">
               Profesionales

@@ -9,7 +9,7 @@ const AboutMe = () => {
     >
       <div className="grid grid-col-1 lg:grid-cols-12 gap-16 items-center xl:px-0 content-center justify-items-center">
         <div className="col-span-full text-center  lg:col-span-8">
-          <h2 className="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
+          <h2 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both uppercase">
             Sobre{" "}
             <span className="bg-gradient-blue text-transparent bg-clip-text timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
               mí

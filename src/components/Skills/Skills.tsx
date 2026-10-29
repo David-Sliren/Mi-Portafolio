@@ -4,7 +4,7 @@ import { skillCategories } from "../../constants/constantsIcons";
 const Skills = () => {
   return (
     <section className="py-32 max-w-7xl mx-auto px-8" id="skills">
-      <h2 className="text-5xl font-bold tracking-tight mb-16 text-center">
+      <h2 className="text-5xl font-bold tracking-tight mb-16 text-center uppercase">
         Habilidades{" "}
         <span className="bg-gradient-blue bg-clip-text text-transparent">
           Técnicas

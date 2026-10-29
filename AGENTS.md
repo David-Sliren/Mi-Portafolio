@@ -7,11 +7,13 @@ This repository is a portfolio built with **Next.js 16 (App Router)**, **React 1
 - `app/` contains the Next.js App Router structure:
   - `layout.tsx`: Root layout with Google Fonts (`Inter`, `Manrope`), global metadata, and JSON-LD structured data.
   - `(home)/page.tsx`: Main route entry point wrapping the home layout.
+  - `api/contact/route.ts`: API Route Handler for contact emails using Nodemailer and React Email.
   - `robots.ts`: Next.js `MetadataRoute.Robots` handler generating `/robots.txt`.
   - `sitemap.ts`: Next.js `MetadataRoute.Sitemap` handler generating `/sitemap.xml`.
   - `globals.css`: Tailwind v4 styles, theme configuration, and CSS variables.
 - `components/` contains reusable UI and portfolio sections:
   - `Hero`, `Experience`, `Skills`, `Projects` (`Projects.tsx`, `ProjectsMobile.tsx`), `Certificates`, `aboutMe`, and `Contact`.
+  - `emails/` contains transactional email templates (`ContactEmail.tsx`) styled with `@react-email/components` following `DESIGN.md`.
   - `ui/` contains reusable layout navigation elements (`Navbar.tsx`, `Footer.tsx`).
 - `Layout/` contains page-level layout wrappers (`Home.tsx`, `HorizontalScroll.tsx`).
 - `constants/` stores portfolio content and asset mappings (`docsProjects.ts`, `docsCertificate.ts`, `constantsIcons.ts`, and `insertImage.ts`).
@@ -59,5 +61,6 @@ Existing commits follow Conventional Commits with a scope:
 ## Security & Configuration Tips
 
 - Keep secrets out of source control and place local configuration in `.env`.
-- Client-side environment variables must use the `NEXT_PUBLIC_` prefix (e.g. `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_EMAIL_*`).
+- Server-side email credentials (`GMAIL_USER`, `GMAIL_APP_PASSWORD`) must remain private on the server and NEVER be exposed to the client or given `NEXT_PUBLIC_` prefixes.
+- Client-side environment variables must use the `NEXT_PUBLIC_` prefix (e.g. `NEXT_PUBLIC_SITE_URL`).
 - Review `.gitignore` before adding generated files; never commit credentials or production-only tokens.

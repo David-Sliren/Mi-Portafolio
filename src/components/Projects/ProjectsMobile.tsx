@@ -8,7 +8,7 @@ const ProjectsMobile = () => {
       className="block md:hidden w-screen lg:w-full relative h-vh scroll-mt-28"
     >
       <div className=" w-full px-8 flex flex-col md:flex-row justify-between items-center z-10 mb-20">
-        <h2 className="text-5xl text-center font-bold tracking-tight ">
+        <h2 className="text-5xl text-center font-bold tracking-tight uppercase">
           Proyectos{" "}
           <span className="bg-gradient-blue bg-clip-text text-transparent">
             Destacados

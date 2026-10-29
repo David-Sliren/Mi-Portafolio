@@ -13,7 +13,7 @@ const Contact = () => {
     <section id="contact" className="py-28 bg-shark-900/40 h-vh">
       <div className="max-w-3xl mx-auto px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold tracking-tight mb-6 text-[#e3e2e4] sm:text-5xl timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
+          <h2 className="text-4xl xl:text-5xl font-bold tracking-tight mb-6 text-[#e3e2e4] sm:text-5xl timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both uppercase">
             CONSTRUYAMOS ALGO{" "}
             <span className="bg-gradient-blue bg-clip-text text-transparent">
               IMPRESIONANTE

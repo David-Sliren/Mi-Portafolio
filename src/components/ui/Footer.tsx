@@ -1,4 +1,4 @@
-import { LuTwitter, LuGithub, LuLinkedin } from "react-icons/lu";
+import { LuGithub, LuLinkedin } from "react-icons/lu";
 import { FaTiktok, FaXTwitter } from "react-icons/fa6";
 
 const listIcon = [

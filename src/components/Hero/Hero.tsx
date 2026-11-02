@@ -43,7 +43,7 @@ const Hero = () => {
                 </span>
               </a>
               <a
-                href="https://drive.google.com/file/d/1Db0Alp4dEKNkiwmcIPwOdrZuRHssy439/view?usp=sharing"
+                href="https://drive.google.com/file/d/13nZqM127Vci8CGeFrBozEwrnGVAQIWV6/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-neutral-700/20 text-primary font-bold rounded-xl border border-white/20 hover:bg-neutral-700/40 transition-all duration-300 active:scale-95 cursor-pointer animate-fade-blur"

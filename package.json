@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "prebuild": "pnpm check:i18n"
   },
   "dependencies": {
     "@react-email/components": "^1.0.12",

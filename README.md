@@ -68,7 +68,9 @@ portfolio/
 │   │   ├── Skills/       # Tecnologías y habilidades
 │   │   └── ui/           # Navbar, Footer y componentes comunes
 │   ├── constants/        # Datos tipados (proyectos, certificados, iconos)
+│   ├── i18n/             # Configuración de next-intl (routing, request, navigation)
 │   ├── Layout/           # Envoltorios de layout de página
+│   ├── messages/         # Traducciones por idioma (es.json, en.json)
 │   └── utils/            # Funciones de utilidad auxiliares
 ├── AGENTS.md             # Guía de convenciones y directrices para agentes
 ├── package.json          # Dependencias y scripts
@@ -77,6 +79,30 @@ portfolio/
 
 ---
 
+## 🌐 Internacionalización (i18n)
+
+El sitio es bilingüe (**español** por defecto y **inglés**) con URLs por idioma (`/es`, `/en`), usando [next-intl](https://next-intl.dev/) 4.x. El idioma se resuelve por URL (`localePrefix: "always"`), cookie `NEXT_LOCALE` (1 año) y detección por `Accept-Language`.
+
+Estructura relevante:
+
+- `src/i18n/routing.ts` — locales (`es`, `en`), `defaultLocale: "es"`, `localePrefix: "always"`.
+- `src/i18n/request.ts` — carga de mensajes y validación del locale con `hasLocale()` + `notFound()`.
+- `src/i18n/navigation.ts` — `Link`, `redirect`, `usePathname`, `useRouter` localizados.
+- `src/proxy.ts` — middleware de next-intl (excluye `api`, `trpc`, `_next`, `_vercel` y archivos estáticos).
+- `src/messages/es.json` y `src/messages/en.json` — traducciones por namespace (`nav`, `hero`, `experience`, `skills`, `projects`, `certificates`, `about`, `contact`, `footer`, `metadata`).
+- `src/app/[locale]/` — rutas bajo el segmento dinámico de locale (`layout.tsx`, `page.tsx`, `global-not-found.tsx`).
+- `scripts/check-i18n.mjs` — verifica paridad de claves, tipos y longitudes de arrays entre ambos JSON.
+
+### Añadir un nuevo idioma
+
+1. Agrega el código del locale a `locales` en `src/i18n/routing.ts` (p. ej. `"fr"`).
+2. Crea `src/messages/fr.json` copiando la estructura de `src/messages/es.json` (todas las claves) y traduce los valores.
+3. Ejecuta `pnpm check:i18n` para confirmar la paridad (debe salir con código 0).
+4. `pnpm build` generará automáticamente la ruta estática `/fr`.
+
+El script `prebuild` ejecuta `check:i18n` antes de cada build, por lo que una diferencia de claves bloquea el despliegue.
+
+---
 ## 🛠️ Comenzar en Local
 
 ### Requisitos Previos
@@ -123,6 +149,7 @@ Abre [http://localhost:3000](http://localhost:3000) en el navegador.
 | `pnpm build` | Compila la aplicación y genera el bundle optimizado para producción. |
 | `pnpm start` | Inicia el servidor de producción con la compilación de `.next/`. |
 | `pnpm lint` | Ejecuta ESLint para validar sintaxis y estilos del código. |
+| `pnpm check:i18n` | Verifica la paridad de claves, tipos y longitudes de arrays entre `src/messages/es.json` y `src/messages/en.json`. |
 
 ---
 

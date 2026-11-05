@@ -20,13 +20,13 @@
 - [x] 3.2 Migrar `Navbar` y `Footer` a `useTranslations`; verificar que los seis enlaces, el CTA de contacto y el copyright cambian de idioma.
 - [x] 3.3 Migrar `Hero` y `Skills` (títulos y categorías); verificar que el nombre propio, el stack y las etiquetas técnicas no se traducen.
 - [x] 3.4 Migrar `Experience` y `JobCard`, incluidos los seis logros; verificar que el periodo y los logros se muestran completos en ambos idiomas.
-- [ ] 3.5 Migrar `Projects`, `ProjectsMobile` y `ProjectCard`, incluido "Ver proyecto" y la etiqueta de plataforma; verificar que las cuatro tarjetas se renderizan en ambos idiomas sin desbordar `line-clamp-9`.
-- [ ] 3.6 Migrar `Certificates` y `CertificateCard`, incluidos encabezados, "Ver certificado" y el `alt` compuesto; verificar que las diez tarjetas se muestran completas.
-- [ ] 3.7 Migrar `AboutMe` con claves separadas `about.p1`…`about.p4` y las dos métricas; verificar que los cuatro párrafos conservan su estructura visual.
-- [ ] 3.8 Migrar `Contact`, `Form` e `InfoCard` (labels, placeholders, "Enviando…", "Cerrar" y confirmación); verificar que el formulario mantiene su comportamiento actual.
-- [ ] 3.9 Crear `scripts/check-i18n.mjs` y añadir a `package.json` los scripts `check:i18n` (`node scripts/check-i18n.mjs`) y `prebuild` (`pnpm check:i18n`); verificar que `pnpm check:i18n` sale con código 0 con claves iguales y falla al quitar temporalmente una clave de `en.json`.
-- [ ] 3.10 Ejecutar `pnpm check:i18n` y confirmar la paridad de claves, y revisar `/es` y `/en` para verificar que ninguna vista muestra claves crudas.
-- [ ] 3.11 Documentar en `README.md` la estructura `src/i18n` + `src/messages` y cómo añadir un idioma; verificar que los nombres de archivo citados existen.
+- [x] 3.5 Migrar `Projects`, `ProjectsMobile` y `ProjectCard`, incluido "Ver proyecto" y la etiqueta de plataforma; verificar que las cuatro tarjetas se renderizan en ambos idiomas sin desbordar `line-clamp-9`.
+- [x] 3.6 Migrar `Certificates` y `CertificateCard`, incluidos encabezados, "Ver certificado" y el `alt` compuesto; verificar que las diez tarjetas se muestran completas.
+- [x] 3.7 Migrar `AboutMe` con claves separadas `about.p1`…`about.p4` y las dos métricas; verificar que los cuatro párrafos conservan su estructura visual.
+- [x] 3.8 Migrar `Contact`, `Form` e `InfoCard` (labels, placeholders, "Enviando…", "Cerrar" y confirmación); verificar que el formulario mantiene su comportamiento actual.
+- [x] 3.9 Crear `scripts/check-i18n.mjs` y añadir a `package.json` los scripts `check:i18n` (`node scripts/check-i18n.mjs`) y `prebuild` (`pnpm check:i18n`); verificar que `pnpm check:i18n` sale con código 0 con claves iguales y falla al quitar temporalmente una clave de `en.json`.
+- [x] 3.10 Ejecutar `pnpm check:i18n` y confirmar la paridad de claves, y revisar `/es` y `/en` para verificar que ninguna vista muestra claves crudas.
+- [x] 3.11 Documentar en `README.md` la estructura `src/i18n` + `src/messages` y cómo añadir un idioma; verificar que los nombres de archivo citados existen.
 
 ## 4. Contenido localizado
 

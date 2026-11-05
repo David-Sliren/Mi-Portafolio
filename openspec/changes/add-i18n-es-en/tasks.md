@@ -37,9 +37,9 @@
 
 ## 5. Selector de idioma
 
-- [ ] 5.1 Añadir el selector `ES | EN` en el navbar de escritorio, reutilizando el hash de `useSyncExternalStore`, con `hrefLang`, `lang` y `aria-current`; verificar que navega a `/<locale><hash>`.
-- [ ] 5.2 Añadir el mismo selector dentro del menú móvil, cerrando el menú al cambiar; verificar en viewport móvil que el idioma cambia y el menú se cierra.
-- [ ] 5.3 Probar el cambio desde cada sección (`#experience`, `#skills`, `#projects`, `#projectsMobile`, `#education`, `#about`, `#contact`) en ambos sentidos; verificar que la URL conserva el fragmento y la página se posiciona en la sección.
+- [x] 5.1 Añadir el selector `ES | EN` en el navbar, reutilizando el hash de `useSyncExternalStore`, con `hrefLang`, `lang` y `aria-current`; verificar que navega a `/<locale><hash>`.
+- [x] 5.2 Verificar en viewport móvil (320 a 390 px) que el selector cabe junto al logo y la hamburguesa y cambia el idioma conservando el hash.
+- [x] 5.3 Probar el cambio desde cada sección (`#experience`, `#skills`, `#projects`, `#projectsMobile`, `#education`, `#about`, `#contact`) en ambos sentidos; verificar que la URL conserva el fragmento y la página se posiciona en la sección.
 
 ## 6. SEO
 

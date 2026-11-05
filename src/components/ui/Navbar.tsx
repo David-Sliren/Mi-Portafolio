@@ -1,9 +1,12 @@
 import { useState, useSyncExternalStore } from "react";
 import { motion } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import type { Locale } from "../../i18n/routing";
 import Logo from "../../assets/icons/Personal/icon-512.png";
 import { LuX, LuMenu } from "react-icons/lu";
 import Image from "next/image";
+
+const locales: Locale[] = ["es", "en"];
 
 const list = [
   { href: "#experience", key: "links.experience" },
@@ -35,8 +38,13 @@ const getHashServerSnapshot = () => "";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const hash = useSyncExternalStore(subscribeHash, getHashSnapshot, getHashServerSnapshot);
+  const hash = useSyncExternalStore(
+    subscribeHash,
+    getHashSnapshot,
+    getHashServerSnapshot,
+  );
   const t = useTranslations("nav");
+  const currentLocale = useLocale() as Locale;
 
   function handlerIsMobile() {
     setIsOpen(!isOpen);
@@ -70,6 +78,26 @@ const Navbar = () => {
             </a>
           ))}
         </ul>
+        <div className="flex items-center gap-1 font-manrope font-bold text-sm">
+          {locales.map((loc, i) => (
+            <span key={loc} className="flex items-center gap-1">
+              {i > 0 && <span className="text-[#414753]">|</span>}
+              <a
+                href={`/${loc}${hash}`}
+                hrefLang={loc}
+                lang={loc}
+                aria-current={loc === currentLocale ? "true" : undefined}
+                className={`px-2 py-1 rounded-lg transition-all duration-300 ${
+                  loc === currentLocale
+                    ? "bg-gradient-blue bg-clip-text text-transparent"
+                    : "text-[#c1c6d6] hover:text-[#e3e2e4]"
+                }`}
+              >
+                {loc.toUpperCase()}
+              </a>
+            </span>
+          ))}
+        </div>
         <a
           href="#contact"
           className="hidden lg:block bg-gradient-blue text-on-primary-container px-6 py-2.5 rounded-full font-headline font-bold text-sm transition-transform duration-300 hover:scale-105"

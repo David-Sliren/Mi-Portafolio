@@ -30,10 +30,10 @@
 
 ## 4. Contenido localizado
 
-- [ ] 4.1 Convertir `skillCategories` en `constantsIcons.ts` para que `title` sea bilingüe manteniendo `label` e `icon` intactos; verificar que `fullSkill` sigue resolviendo los iconos de proyectos.
-- [ ] 4.2 Convertir `docsProjects.ts` al patrón `id` + `Localized<T>`, dejando `img`, `link`, `stack` y `repo` compartidos; actualizar `key` y `alt` a `id`; verificar que las cuatro tarjetas muestran imagen, enlace e iconos correctos en ambos idiomas.
-- [ ] 4.3 Convertir `docsCertificate.ts` al patrón `id` + `Localized<T>` con `date` como texto por idioma; verificar que las diez fechas se leen de forma natural en `es` y `en`.
-- [ ] 4.4 Revisar que ningún campo no lingüístico se duplicó por idioma y que no quedan referencias a `item.title` como `key` o `alt`; verificar con búsqueda en el código.
+- [x] 4.1 Convertir `skillCategories` en `constantsIcons.ts` para que `title` sea bilingüe manteniendo `label` e `icon` intactos; verificar que `fullSkill` sigue resolviendo los iconos de proyectos.
+- [x] 4.2 Convertir `docsProjects.ts` al patrón `id` + `Localized<T>`, dejando `img`, `link`, `stack` y `repo` compartidos; actualizar `key` y `alt` a `id`; verificar que las cuatro tarjetas muestran imagen, enlace e iconos correctos en ambos idiomas.
+- [x] 4.3 Convertir `docsCertificate.ts` al patrón `id` + `Localized<T>` con `date` como texto por idioma; verificar que las diez fechas se leen de forma natural en `es` y `en`.
+- [x] 4.4 Revisar que ningún campo no lingüístico se duplicó por idioma y que no quedan referencias a `item.title` como `key` o `alt`; verificar con búsqueda en el código.
 
 ## 5. Selector de idioma
 

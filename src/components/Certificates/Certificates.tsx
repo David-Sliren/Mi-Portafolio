@@ -1,17 +1,19 @@
 import CertificateCard from "./CertificateCard";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import type { Locale } from "../../i18n/routing";
 import { certificateData } from "../../constants/docsCertificate";
 
 const BentoCertificate = () => {
+  const locale = useLocale() as Locale;
   return (
     <div className="grid grid-cols-1 sm:grid-cols-6  lg:grid-cols-12 gap-6">
       {certificateData.map((item) => (
         <CertificateCard
-          key={item.title}
-          title={item.title}
+          key={item.id}
+          title={item.title[locale]}
           imgsrc={item.img}
-          place={item.platform}
-          date={item.date}
+          place={item.platform[locale]}
+          date={item.date[locale]}
           link={item.link}
         />
       ))}

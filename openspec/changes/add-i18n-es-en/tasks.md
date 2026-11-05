@@ -16,10 +16,10 @@
 
 ## 3. Mensajes y componentes
 
-- [ ] 3.1 Completar `src/messages/es.json` y `src/messages/en.json` (ya existen vacíos desde 2.2) con los namespaces `nav`, `hero`, `experience`, `skills`, `projects`, `certificates`, `about`, `contact`, `footer` y `metadata`; verificar que ambos archivos son JSON válido y tienen las mismas claves.
-- [ ] 3.2 Migrar `Navbar` y `Footer` a `useTranslations`; verificar que los seis enlaces, el CTA de contacto y el copyright cambian de idioma.
-- [ ] 3.3 Migrar `Hero` y `Skills` (títulos y categorías); verificar que el nombre propio, el stack y las etiquetas técnicas no se traducen.
-- [ ] 3.4 Migrar `Experience` y `JobCard`, incluidos los seis logros; verificar que el periodo y los logros se muestran completos en ambos idiomas.
+- [x] 3.1 Completar `src/messages/es.json` y `src/messages/en.json` (ya existen vacíos desde 2.2) con los namespaces `nav`, `hero`, `experience`, `skills`, `projects`, `certificates`, `about`, `contact`, `footer` y `metadata`; verificar que ambos archivos son JSON válido y tienen las mismas claves.
+- [x] 3.2 Migrar `Navbar` y `Footer` a `useTranslations`; verificar que los seis enlaces, el CTA de contacto y el copyright cambian de idioma.
+- [x] 3.3 Migrar `Hero` y `Skills` (títulos y categorías); verificar que el nombre propio, el stack y las etiquetas técnicas no se traducen.
+- [x] 3.4 Migrar `Experience` y `JobCard`, incluidos los seis logros; verificar que el periodo y los logros se muestran completos en ambos idiomas.
 - [ ] 3.5 Migrar `Projects`, `ProjectsMobile` y `ProjectCard`, incluido "Ver proyecto" y la etiqueta de plataforma; verificar que las cuatro tarjetas se renderizan en ambos idiomas sin desbordar `line-clamp-9`.
 - [ ] 3.6 Migrar `Certificates` y `CertificateCard`, incluidos encabezados, "Ver certificado" y el `alt` compuesto; verificar que las diez tarjetas se muestran completas.
 - [ ] 3.7 Migrar `AboutMe` con claves separadas `about.p1`…`about.p4` y las dos métricas; verificar que los cuatro párrafos conservan su estructura visual.

@@ -1,1 +1,50 @@
-{}
+{
+  "nav": {
+    "links": {
+      "experience": "Experiencia",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "education": "Educación",
+      "about": "Sobre mí"
+    },
+    "contactCta": "Contacto",
+    "logoAlt": "Logo personal"
+  },
+  "hero": {
+    "role": "Desarrollador Full Stack",
+    "subtitle": "Mi objetivo es crear aplicaciones que no solo funcionen bien, sino que transmitan personalidad, elegancia y una experiencia genuina para quienes las utilizan.",
+    "githubCta": "Ver Github",
+    "cvCta": "Descargar CV",
+    "scroll": "Scroll"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "description": "Mi trayectoria profesional y desarrollo técnico.",
+    "role": "Desarrollador Full Stack",
+    "company": "Freelance profesional independiente · Remoto",
+    "summary": "Desde 2024 diseño, desarrollo y despliego aplicaciones web y móviles de principio a fin, en proyectos propios y para clientes reales: frontend, backend y producción, con JavaScript, TypeScript, React, Next.js, Node.js y Python.",
+    "achievementsLabel": "Logros destacados:",
+    "achievements": [
+      "Desarrollo un sistema de gestión de calificaciones para un profesor independiente que trabaja en varios institutos, centralizando el registro y seguimiento del rendimiento de sus estudiantes.",
+      "Construí y mantengo Aleida Contribución, una aplicación web con 20 a 30 usuarios activos, con control de accesos por roles y conciliación financiera.",
+      "Reduje en un 40% los re-renders innecesarios con arquitecturas de estado modulares usando Zustand (slices).",
+      "Optimicé una SPA con Vite, React y TypeScript hasta un score de 97 en Lighthouse, resolviendo además bugs críticos de navegación en dispositivos móviles.",
+      "Garantizo la integridad de los datos en producción con esquemas y validaciones de Mongoose sobre MongoDB.",
+      "Publiqué Renpentain, una aplicación móvil de listas de compras disponible en Uptodown."
+    ],
+    "period": "2024 — Presente"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "titleAccent": "Técnicas"
+  },
+  "projects": {},
+  "certificates": {},
+  "about": {},
+  "contact": {},
+  "footer": {
+    "copyright": "© 2026 David Sliren.",
+    "rights": "Casi todos los derechos reservados."
+  },
+  "metadata": {}
+}

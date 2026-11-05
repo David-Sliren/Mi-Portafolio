@@ -1,23 +1,24 @@
 import { useState, useSyncExternalStore } from "react";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 import Logo from "../../assets/icons/Personal/icon-512.png";
 import { LuX, LuMenu } from "react-icons/lu";
 import Image from "next/image";
 
 const list = [
-  { href: "#experience", label: "Experiencia" },
-  { href: "#skills", label: "Habilidades" },
-  { href: "#projects", label: "Proyectos" },
-  { href: "#education", label: "Educación" },
-  { href: "#about", label: "Sobre mí" },
+  { href: "#experience", key: "links.experience" },
+  { href: "#skills", key: "links.skills" },
+  { href: "#projects", key: "links.projects" },
+  { href: "#education", key: "links.education" },
+  { href: "#about", key: "links.about" },
 ];
 
 const listMobile = [
-  { href: "#experience", label: "Experiencia" },
-  { href: "#skills", label: "Habilidades" },
-  { href: "#projectsMobile", label: "Proyectos" },
-  { href: "#education", label: "Educación" },
-  { href: "#about", label: "Sobre mí" },
+  { href: "#experience", key: "links.experience" },
+  { href: "#skills", key: "links.skills" },
+  { href: "#projectsMobile", key: "links.projects" },
+  { href: "#education", key: "links.education" },
+  { href: "#about", key: "links.about" },
 ];
 
 const subscribeHash = (callback: () => void) => {
@@ -35,6 +36,7 @@ const getHashServerSnapshot = () => "";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const hash = useSyncExternalStore(subscribeHash, getHashSnapshot, getHashServerSnapshot);
+  const t = useTranslations("nav");
 
   function handlerIsMobile() {
     setIsOpen(!isOpen);
@@ -48,7 +50,7 @@ const Navbar = () => {
             <Image
               className="w-8 aspect-square"
               src={Logo}
-              alt="Logo personal"
+              alt={t("logoAlt")}
               height={100}
               width={100}
             />
@@ -63,7 +65,7 @@ const Navbar = () => {
               <li
                 className={`text-[#c1c6d6] hover:text-[#e3e2e4] font-manrope font-bold tracking-tight text-sm hover:bg-[#292a2c]/50 transition-all duration-300 ease-in-out px-3 py-1 rounded-lg cursor-pointer ${item.href == hash && "bg-gradient-blue bg-clip-text text-transparent"}`}
               >
-                {item.label}
+                {t(item.key)}
               </li>
             </a>
           ))}
@@ -72,7 +74,7 @@ const Navbar = () => {
           href="#contact"
           className="hidden lg:block bg-gradient-blue text-on-primary-container px-6 py-2.5 rounded-full font-headline font-bold text-sm transition-transform duration-300 hover:scale-105"
         >
-          Contacto
+          {t("contactCta")}
         </a>
         <button
           onClick={handlerIsMobile}
@@ -96,7 +98,7 @@ const Navbar = () => {
               <li
                 className={`text-[#c1c6d6] hover:text-[#e3e2e4] font-bold tracking-tight text-sm transition-all duration-300 ease-in-out p-1 rounded-lg ${item.href == hash && "bg-gradient-blue bg-clip-text text-transparent"}`}
               >
-                {item.label}
+                {t(item.key)}
               </li>
             </a>
           ))}

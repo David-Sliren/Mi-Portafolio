@@ -1,5 +1,6 @@
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import { FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 const listIcon = [
   {
@@ -25,6 +26,8 @@ const listIcon = [
 ];
 
 const Footer = () => {
+  const t = useTranslations("footer");
+
   return (
     <footer className="w-full py-8 border-t border-[#414753]/15 bg-[#121315]">
       <div className="flex flex-col xl:flex-row justify-between items-center max-w-7xl mx-auto gap-y-6 px-8 xl:gap-y-0">
@@ -34,8 +37,7 @@ const Footer = () => {
           </span>
         </div>
         <div className="items-center text-center text-xs tracking-widest uppercase text-[#c1c6d6]">
-          © 2026 David Sliren. <br className="sm:hidden" /> Casi todos los
-          derechos reservados.
+          {t("copyright")} <br className="sm:hidden" /> {t("rights")}
         </div>
         <div className="flex gap-x-5">
           {listIcon.map((item) => {

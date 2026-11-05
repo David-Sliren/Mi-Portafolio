@@ -1,13 +1,16 @@
 import CardSkill from "./CardSkill";
+import { useTranslations } from "next-intl";
 import { skillCategories } from "../../constants/constantsIcons";
 
 const Skills = () => {
+  const t = useTranslations("skills");
+
   return (
     <section className="py-32 max-w-7xl mx-auto px-8" id="skills">
       <h2 className="text-5xl font-bold tracking-tight mb-16 text-center uppercase">
-        Habilidades{" "}
+        {t("title")}{" "}
         <span className="bg-gradient-blue bg-clip-text text-transparent">
-          Técnicas
+          {t("titleAccent")}
         </span>
       </h2>
       <div className="space-y-14">

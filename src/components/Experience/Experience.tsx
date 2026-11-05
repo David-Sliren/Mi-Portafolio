@@ -1,16 +1,19 @@
 import JobCard from "./JobCard";
+import { useTranslations } from "next-intl";
 
 const Experience = () => {
+  const t = useTranslations("experience");
+
   return (
     <section className="bg-shark-900/40 py-20 scroll-mt-10" id="experience">
       <section className="w-full md:max-w-7xl mx-auto px-2 md:px-8">
         <article className="flex flex-col md:flex-row justify-between items-start mb-15 gap-8 px-2">
           <div>
             <h2 className="text-4xl font-bold tracking-tight mb-4 uppercase">
-              Experiencia
+              {t("title")}
             </h2>
             <p className="text-on-surface-variant max-w-md">
-              Mi trayectoria profesional y desarrollo técnico.
+              {t("description")}
             </p>
           </div>
         </article>

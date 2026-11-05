@@ -1,4 +1,5 @@
 import CertificateCard from "./CertificateCard";
+import { useTranslations } from "next-intl";
 import { certificateData } from "../../constants/docsCertificate";
 
 const BentoCertificate = () => {
@@ -19,6 +20,8 @@ const BentoCertificate = () => {
 };
 
 const Certificates = () => {
+  const t = useTranslations("certificates");
+
   return (
     <section
       id="education"
@@ -27,18 +30,18 @@ const Certificates = () => {
       <section className="mb-20">
         <div className="flex flex-col gap-2 ">
           <span className="font-label text-primary tracking-[0.2em] text-[10px] uppercase timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
-            Validación Técnica
+            {t("eyebrow")}
           </span>
           <h2 className="text-4xl md:text-4xl xl:text-5xl font-bold font-headline tracking-tighter text-on-surface leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both uppercase">
-            Certificaciones{" "}
+            {t("title")}{" "}
             <span className="bg-gradient-blue bg-clip-text text-transparent">
-              Profesionales
+              {t("titleAccent")}
             </span>
           </h2>
         </div>
         <div className="mt-8 max-w-2xl">
           <p className="text-lg text-on-surface-variant font-body timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
-            Acreditaciones oficiales que respaldan mi experiencia técnica.
+            {t("description")}
           </p>
         </div>
       </section>

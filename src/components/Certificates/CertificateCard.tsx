@@ -1,4 +1,5 @@
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
+import { useTranslations } from "next-intl";
 
 interface CertificateCardProps {
   title: string;
@@ -17,6 +18,8 @@ const CertificateCard = ({
   imgsrc,
   link,
 }: CertificateCardProps) => {
+  const t = useTranslations("certificates");
+
   return (
     <a
       href={link}
@@ -28,7 +31,7 @@ const CertificateCard = ({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="size-full object-cover object-top"
-          alt={`Certificado ${title} de ${place}`}
+          alt={t("cardAlt", { title, place })}
           loading="lazy"
           decoding="async"
           src={imgsrc}
@@ -53,7 +56,7 @@ const CertificateCard = ({
       </div>
       <div className="hidden absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 sm:flex items-center justify-center z-10 backdrop-blur-xl">
         <button className="bg-white/5 px-8 py-4 rounded-full font-headline font-bold text-white flex items-center space-x-2 border border-white/20 backdrop-blur-3xl cursor-pointer z-10 hover:bg-white/10 hover:animate-jelly">
-          <span>Ver certificado</span>
+          <span>{t("viewCertificate")}</span>
           <span className=" text-sm">
             <LuCircleArrowOutUpRight />
           </span>

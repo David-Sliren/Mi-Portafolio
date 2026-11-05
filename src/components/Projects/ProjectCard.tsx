@@ -1,4 +1,5 @@
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
+import { useTranslations } from "next-intl";
 import { fullSkill } from "../../constants/constantsIcons";
 
 interface ProjectCardProps {
@@ -20,6 +21,8 @@ const ProjectCard = ({
   link,
   stack,
 }: ProjectCardProps) => {
+  const t = useTranslations("projects");
+
   return (
     <a
       href={link}
@@ -53,7 +56,7 @@ const ProjectCard = ({
       </div>
       <div className="hidden absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 sm:flex items-center justify-center z-10 backdrop-blur-xl">
         <button className="bg-white/5 px-8 py-4 rounded-full font-headline font-bold text-white flex items-center space-x-2 border border-white/20 backdrop-blur-3xl cursor-pointer z-10 hover:bg-white/10 hover:animate-jelly">
-          <span>Ver proyecto</span>
+          <span>{t("viewProject")}</span>
           <span className=" text-sm">
             <LuCircleArrowOutUpRight />
           </span>

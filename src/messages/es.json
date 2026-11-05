@@ -38,10 +38,61 @@
     "title": "Habilidades",
     "titleAccent": "Técnicas"
   },
-  "projects": {},
-  "certificates": {},
-  "about": {},
-  "contact": {},
+  "projects": {
+    "title": "Proyectos",
+    "titleAccent": "Destacados",
+    "range": "2024 - 2026",
+    "viewProject": "Ver proyecto"
+  },
+  "certificates": {
+    "eyebrow": "Validación Técnica",
+    "title": "Certificaciones",
+    "titleAccent": "Profesionales",
+    "description": "Acreditaciones oficiales que respaldan mi experiencia técnica.",
+    "cardAlt": "Certificado {title} de {place}",
+    "viewCertificate": "Ver certificado"
+  },
+  "about": {
+    "title": "Sobre",
+    "titleAccent": "mí",
+    "p1": "Desde que descubrí la programación, me enamoré de la libertad de crear. Siempre me fascinó la idea de poder transformar una idea en algo real, construir desde cero y dar vida a experiencias que antes solo existían en la imaginación.",
+    "p2": "Disfruto especialmente diseñar aplicaciones que se sientan organizadas, fluidas y agradables de usar. Me interesa la forma en que una interfaz, una animación o una arquitectura bien pensada pueden hacer que la tecnología deje de sentirse fría y se convierta en una extensión natural de las personas.",
+    "p3": "Soy desarrollador Full Stack con foco en JavaScript y TypeScript (React, Next.js, Node.js), y ampliando mi stack hacia Python con FastAPI. Diseño y despliego aplicaciones web y móviles de principio a fin: arquitectura, backend, frontend y producción.",
+    "p4": "Me apasiona aprender constantemente, resolver problemas complejos y mejorar cada detalle de los proyectos que construyo, tanto a nivel técnico como visual.",
+    "metrics": {
+      "yearsValue": "2+",
+      "yearsLabel": "Años de experiencia",
+      "projectsValue": "40+",
+      "projectsLabel": "Proyectos"
+    },
+    "imageAlt": "Fotografía de David Salazar, Desarrollador Full Stack"
+  },
+  "contact": {
+    "title": "CONSTRUYAMOS ALGO",
+    "titleAccent": "IMPRESIONANTE",
+    "description": "Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales remotas. Si tu proyecto necesita a alguien que lo lleve de la idea a producción y se haga cargo, hablemos.",
+    "form": {
+      "labels": {
+        "name": "Nombre",
+        "email": "Correo",
+        "message": "Mensaje"
+      },
+      "placeholders": {
+        "name": "David Sliren",
+        "email": "jhojansalazardev@gmail.com",
+        "message": "Háblame sobre tu proyecto..."
+      },
+      "submit": "Enviar Correo",
+      "submitting": "Enviando mensaje...",
+      "close": "Cerrar",
+      "error": "Hubo un problema al enviar el mensaje. Por favor intenta de nuevo.",
+      "networkError": "No se pudo establecer conexión con el servidor. Revisa tu conexión a internet."
+    },
+    "confirmation": {
+      "message": "Gracias, en menos de 24 horas me pondré en contacto contigo",
+      "again": "Enviar otro correo"
+    }
+  },
   "footer": {
     "copyright": "© 2026 David Sliren.",
     "rights": "Casi todos los derechos reservados."

@@ -1,5 +1,8 @@
 import { IconType } from "react-icons";
-import {
+import type { Locale } from "../i18n/routing";
+
+export type { Locale };
+export type Localized<T> = Record<Locale, T>;import {
   SiHtml5,
   SiCss,
   SiJavascript,
@@ -48,13 +51,13 @@ export interface Skill {
 }
 
 export interface SkillCategory {
-  title: string;
+  title: Localized<string>;
   skills: Skill[];
 }
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend",
+    title: { es: "Frontend", en: "Frontend" },
     skills: [
       { label: "HTML", icon: SiHtml5 },
       { label: "CSS", icon: SiCss },
@@ -71,7 +74,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Backend",
+    title: { es: "Backend", en: "Backend" },
     skills: [
       { label: "Node.js", icon: SiNodedotjs },
       { label: "Express", icon: SiExpress },
@@ -82,7 +85,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Bases de datos",
+    title: { es: "Bases de datos", en: "Bases de datos" },
     skills: [
       { label: "MongoDB", icon: SiMongodb },
       { label: "Mongoose", icon: SiMongoose },
@@ -93,7 +96,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Estado y validación",
+    title: { es: "Estado y validación", en: "Estado y validación" },
     skills: [
       { label: "Zustand", icon: TbPaw },
       { label: "Redux", icon: SiRedux },
@@ -103,7 +106,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Testing",
+    title: { es: "Testing", en: "Testing" },
     skills: [
       { label: "Vitest", icon: SiVitest },
       { label: "Playwright", icon: TbMasksTheater },
@@ -111,7 +114,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Herramientas",
+    title: { es: "Herramientas", en: "Herramientas" },
     skills: [
       { label: "Git", icon: SiGit },
       { label: "GitHub", icon: SiGithub },

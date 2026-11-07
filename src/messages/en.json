@@ -1,96 +1,96 @@
 {
   "nav": {
     "links": {
-      "experience": "Experiencia",
-      "skills": "Habilidades",
-      "projects": "Proyectos",
-      "education": "Educación",
-      "about": "Sobre mí"
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "education": "Education",
+      "about": "About me"
     },
-    "contactCta": "Contacto",
-    "logoAlt": "Logo personal"
+    "contactCta": "Contact",
+    "logoAlt": "Personal logo"
   },
   "hero": {
-    "role": "Desarrollador Full Stack",
-    "subtitle": "Mi objetivo es crear aplicaciones que no solo funcionen bien, sino que transmitan personalidad, elegancia y una experiencia genuina para quienes las utilizan.",
-    "githubCta": "Ver Github",
-    "cvCta": "Descargar CV",
+    "role": "Full Stack Developer",
+    "subtitle": "My goal is to build applications that not only work well, but convey personality, elegance and a genuine experience for those who use them.",
+    "githubCta": "View GitHub",
+    "cvCta": "Download CV",
     "scroll": "Scroll"
   },
   "experience": {
-    "title": "Experiencia",
-    "description": "Mi trayectoria profesional y desarrollo técnico.",
-    "role": "Desarrollador Full Stack",
-    "company": "Freelance profesional independiente · Remoto",
-    "summary": "Desde 2024 diseño, desarrollo y despliego aplicaciones web y móviles de principio a fin, en proyectos propios y para clientes reales: frontend, backend y producción, con JavaScript, TypeScript, React, Next.js, Node.js y Python.",
-    "achievementsLabel": "Logros destacados:",
+    "title": "Experience",
+    "description": "My professional journey and technical growth.",
+    "role": "Full Stack Developer",
+    "company": "Independent freelance professional · Remote",
+    "summary": "Since 2024 I design, develop and ship web and mobile applications end to end, in my own projects and for real clients: frontend, backend and production, with JavaScript, TypeScript, React, Next.js, Node.js and Python.",
+    "achievementsLabel": "Key achievements:",
     "achievements": [
-      "Desarrollo un sistema de gestión de calificaciones para un profesor independiente que trabaja en varios institutos, centralizando el registro y seguimiento del rendimiento de sus estudiantes.",
-      "Construí y mantengo Aleida Contribución, una aplicación web con 20 a 30 usuarios activos, con control de accesos por roles y conciliación financiera.",
-      "Reduje en un 40% los re-renders innecesarios con arquitecturas de estado modulares usando Zustand (slices).",
-      "Optimicé una SPA con Vite, React y TypeScript hasta un score de 97 en Lighthouse, resolviendo además bugs críticos de navegación en dispositivos móviles.",
-      "Garantizo la integridad de los datos en producción con esquemas y validaciones de Mongoose sobre MongoDB.",
-      "Publiqué Renpentain, una aplicación móvil de listas de compras disponible en Uptodown."
+      "I develop a grade management system for an independent teacher working across several institutes, centralizing the registration and tracking of his students' performance.",
+      "I built and maintain Aleida Contribución, a web application with 20 to 30 active users, with role-based access control and financial reconciliation.",
+      "I reduced unnecessary re-renders by 40% with modular state architectures using Zustand (slices).",
+      "I optimized a SPA with Vite, React and TypeScript to a Lighthouse score of 97, also fixing critical navigation bugs on mobile devices.",
+      "I guarantee data integrity in production with Mongoose schemas and validations over MongoDB.",
+      "I published Renpentain, a shopping list mobile app available on Uptodown."
     ],
-    "period": "2024 — Presente"
+    "period": "2024 — Present"
   },
   "skills": {
-    "title": "Habilidades",
-    "titleAccent": "Técnicas"
+    "title": "Skills",
+    "titleAccent": "Technical"
   },
   "projects": {
-    "title": "Proyectos",
-    "titleAccent": "Destacados",
+    "title": "Projects",
+    "titleAccent": "Featured",
     "range": "2024 - 2026",
-    "viewProject": "Ver proyecto"
+    "viewProject": "View project"
   },
   "certificates": {
-    "eyebrow": "Validación Técnica",
-    "title": "Certificaciones",
-    "titleAccent": "Profesionales",
-    "description": "Acreditaciones oficiales que respaldan mi experiencia técnica.",
-    "cardAlt": "Certificado {title} de {place}",
-    "viewCertificate": "Ver certificado"
+    "eyebrow": "Technical Validation",
+    "title": "Certifications",
+    "titleAccent": "Professional",
+    "description": "Official accreditations backing my technical experience.",
+    "cardAlt": "Certificate {title} from {place}",
+    "viewCertificate": "View certificate"
   },
   "about": {
-    "title": "Sobre",
-    "titleAccent": "mí",
-    "p1": "Desde que descubrí la programación, me enamoré de la libertad de crear. Siempre me fascinó la idea de poder transformar una idea en algo real, construir desde cero y dar vida a experiencias que antes solo existían en la imaginación.",
-    "p2": "Disfruto especialmente diseñar aplicaciones que se sientan organizadas, fluidas y agradables de usar. Me interesa la forma en que una interfaz, una animación o una arquitectura bien pensada pueden hacer que la tecnología deje de sentirse fría y se convierta en una extensión natural de las personas.",
-    "p3": "Soy desarrollador Full Stack con foco en JavaScript y TypeScript (React, Next.js, Node.js), y ampliando mi stack hacia Python con FastAPI. Diseño y despliego aplicaciones web y móviles de principio a fin: arquitectura, backend, frontend y producción.",
-    "p4": "Me apasiona aprender constantemente, resolver problemas complejos y mejorar cada detalle de los proyectos que construyo, tanto a nivel técnico como visual.",
+    "title": "About",
+    "titleAccent": "me",
+    "p1": "Since I discovered programming, I fell in love with the freedom to create. I have always been fascinated by the idea of turning an idea into something real, building from scratch and bringing to life experiences that previously only existed in the imagination.",
+    "p2": "I especially enjoy designing applications that feel organized, fluid and pleasant to use. I care about how a well-thought-out interface, animation or architecture can make technology stop feeling cold and become a natural extension of people.",
+    "p3": "I am a Full Stack developer focused on JavaScript and TypeScript (React, Next.js, Node.js), expanding my stack towards Python with FastAPI. I design and ship web and mobile applications end to end: architecture, backend, frontend and production.",
+    "p4": "I am passionate about constantly learning, solving complex problems and improving every detail of the projects I build, both technically and visually.",
     "metrics": {
       "yearsValue": "2+",
-      "yearsLabel": "Años de experiencia",
+      "yearsLabel": "Years of experience",
       "projectsValue": "40+",
-      "projectsLabel": "Proyectos"
+      "projectsLabel": "Projects"
     },
-    "imageAlt": "Fotografía de David Salazar, Desarrollador Full Stack"
+    "imageAlt": "Photo of David Salazar, Full Stack Developer"
   },
   "contact": {
-    "title": "CONSTRUYAMOS ALGO",
-    "titleAccent": "IMPRESIONANTE",
-    "description": "Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales remotas. Si tu proyecto necesita a alguien que lo lleve de la idea a producción y se haga cargo, hablemos.",
+    "title": "LET'S BUILD SOMETHING",
+    "titleAccent": "AMAZING",
+    "description": "I am available for freelance projects, collaborations and remote job opportunities. If your project needs someone to take it from idea to production and own it, let's talk.",
     "form": {
       "labels": {
-        "name": "Nombre",
-        "email": "Correo",
-        "message": "Mensaje"
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
       },
       "placeholders": {
         "name": "David Sliren",
         "email": "jhojansalazardev@gmail.com",
-        "message": "Háblame sobre tu proyecto..."
+        "message": "Tell me about your project..."
       },
-      "submit": "Enviar Correo",
-      "submitting": "Enviando mensaje...",
-      "close": "Cerrar",
-      "error": "Hubo un problema al enviar el mensaje. Por favor intenta de nuevo.",
-      "networkError": "No se pudo establecer conexión con el servidor. Revisa tu conexión a internet."
+      "submit": "Send Email",
+      "submitting": "Sending message...",
+      "close": "Close",
+      "error": "There was a problem sending the message. Please try again.",
+      "networkError": "Could not connect to the server. Check your internet connection."
     },
     "confirmation": {
-      "message": "Gracias, en menos de 24 horas me pondré en contacto contigo",
-      "again": "Enviar otro correo"
+      "message": "Thanks, I will get back to you within 24 hours",
+      "again": "Send another email"
     },
     "errors": {
       "INVALID_NAME": "Name is required.",
@@ -103,29 +103,13 @@
   },
   "footer": {
     "copyright": "© 2026 David Sliren.",
-    "rights": "Casi todos los derechos reservados."
+    "rights": "Almost all rights reserved."
   },
   "metadata": {
     "title": "David Sliren | Full Stack Multiplatform Developer",
     "description": "Professional portfolio of David Sliren (David Salazar), Full Stack and multiplatform developer. Explore projects in React, Next.js, React Native and Node.js.",
     "ogDescription": "Professional portfolio of David Sliren: web and mobile projects with React, Next.js, React Native and Node.js.",
-    "keywords": [
-      "full stack developer",
-      "portfolio",
-      "react",
-      "react native",
-      "next.js",
-      "node.js",
-      "typescript",
-      "tailwind css",
-      "david salazar",
-      "david sliren",
-      "sliren",
-      "slirendev",
-      "sliren.dev",
-      "frontend developer",
-      "backend developer"
-    ],
+    "keywords": ["full stack developer", "portfolio", "react", "react native", "next.js", "node.js", "typescript", "tailwind css", "david salazar", "david sliren", "sliren", "slirendev", "sliren.dev", "frontend developer", "backend developer"],
     "jobTitle": "Full Stack Multiplatform Developer"
   }
 }

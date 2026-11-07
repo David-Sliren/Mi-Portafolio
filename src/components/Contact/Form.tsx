@@ -40,11 +40,16 @@ const Form = ({ handler }: FormProps) => {
         form.reset();
         handler();
       } else {
-        setErrorMessage(result?.error || t("form.error"));
+        const code = result?.error?.code;
+        setErrorMessage(
+          code && t.has(`errors.${code}`)
+            ? t(`errors.${code}`)
+            : t("form.error")
+        );
       }
     } catch (error) {
       console.error("[Form Contact Error]:", error);
-      setErrorMessage(t("form.networkError"));
+      setErrorMessage(t("errors.NETWORK"));
     } finally {
       setIsSubmitting(false);
     }

@@ -91,6 +91,14 @@
     "confirmation": {
       "message": "Gracias, en menos de 24 horas me pondré en contacto contigo",
       "again": "Enviar otro correo"
+    },
+    "errors": {
+      "INVALID_NAME": "El nombre es obligatorio.",
+      "INVALID_EMAIL": "El formato del correo electrónico no es válido.",
+      "INVALID_MESSAGE": "El mensaje no puede estar vacío.",
+      "MAIL_NOT_CONFIGURED": "El servicio de correo no está disponible en este momento.",
+      "SEND_FAILED": "No se pudo enviar el correo en este momento. Por favor intenta nuevamente.",
+      "NETWORK": "No se pudo establecer conexión con el servidor. Revisa tu conexión a internet."
     }
   },
   "footer": {

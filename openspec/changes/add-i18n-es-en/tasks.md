@@ -51,9 +51,9 @@
 
 ## 7. API y formulario
 
-- [ ] 7.1 Cambiar `/api/contact` para devolver códigos estables (`INVALID_NAME`, `INVALID_EMAIL`, `INVALID_MESSAGE`, `MAIL_NOT_CONFIGURED`, `SEND_FAILED`) sin alterar el envío con Nodemailer; verificar con `curl` cada caso.
-- [ ] 7.2 Mapear los códigos a mensajes localizados en `Form` y mantener los fallos de red traducidos; verificar que un correo inválido muestra el error en el idioma activo.
-- [ ] 7.3 Probar el envío correcto con credenciales configuradas y confirmar que el correo recibido sigue en español; verificar asunto, cuerpo y `replyTo`.
+- [x] 7.1 Cambiar `/api/contact` para devolver códigos estables (`INVALID_NAME`, `INVALID_EMAIL`, `INVALID_MESSAGE`, `MAIL_NOT_CONFIGURED`, `SEND_FAILED`) sin alterar el envío con Nodemailer; verificar con `curl` cada caso.
+- [x] 7.2 Mapear los códigos a mensajes localizados en `Form` y mantener los fallos de red traducidos; verificar que un correo inválido muestra el error en el idioma activo.
+- [x] 7.3 Probar el envío correcto con credenciales configuradas y confirmar que el correo recibido sigue en español; verificar asunto, cuerpo y `replyTo`.
 
 ## 8. Redacción y revisión del inglés
 

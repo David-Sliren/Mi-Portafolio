@@ -43,11 +43,11 @@
 
 ## 6. SEO
 
-- [ ] 6.1 Implementar `generateMetadata` por locale con título, descripción y `alternates` (canonical propio, `es`, `en`, `x-default → /es`); verificar en `view-source` de `/es` y `/en`.
-- [ ] 6.2 Añadir Open Graph y Twitter por idioma con `og:locale`, `og:locale:alternate` y textos traducidos; verificar las etiquetas en ambas páginas.
-- [ ] 6.3 Traducir las keywords y el `jobTitle` de los dos bloques JSON-LD, manteniendo `name`, `sameAs` y `knowsAbout`; verificar que ambos bloques son JSON válido y que `inLanguage` coincide con el locale.
-- [ ] 6.4 Actualizar `sitemap.ts` para listar `/es` y `/en` con `alternates.languages`; verificar el XML generado y que `robots.txt` sigue declarando el sitemap.
-- [ ] 6.5 Verificar que ninguna de las dos páginas declara `noindex` y que `/` responde 307 sin contenido canónico propio.
+- [x] 6.1 Implementar `generateMetadata` por locale con título, descripción y `alternates` (canonical propio, `es`, `en`, `x-default → /es`); verificar en `view-source` de `/es` y `/en`.
+- [x] 6.2 Añadir Open Graph y Twitter por idioma con `og:locale`, `og:locale:alternate` y textos traducidos; verificar las etiquetas en ambas páginas.
+- [x] 6.3 Traducir las keywords y el `jobTitle` de los dos bloques JSON-LD, manteniendo `name`, `sameAs` y `knowsAbout`; verificar que ambos bloques son JSON válido y que `inLanguage` coincide con el locale.
+- [x] 6.4 Actualizar `sitemap.ts` para listar `/es` y `/en` con `alternates.languages`; verificar el XML generado y que `robots.txt` sigue declarando el sitemap.
+- [x] 6.5 Verificar que ninguna de las dos páginas declara `noindex` y que `/` responde 307 sin contenido canónico propio.
 
 ## 7. API y formulario
 

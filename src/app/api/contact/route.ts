@@ -11,14 +11,14 @@ export async function POST(req: Request) {
     // Validación básica de campos requeridos
     if (!name || typeof name !== "string" || !name.trim()) {
       return NextResponse.json(
-        { error: "El nombre es obligatorio." },
+        { error: { code: "INVALID_NAME" } },
         { status: 400 }
       );
     }
 
     if (!email || typeof email !== "string" || !email.trim()) {
       return NextResponse.json(
-        { error: "El correo electrónico es obligatorio." },
+        { error: { code: "INVALID_EMAIL" } },
         { status: 400 }
       );
     }
@@ -26,14 +26,14 @@ export async function POST(req: Request) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email.trim())) {
       return NextResponse.json(
-        { error: "El formato del correo electrónico no es válido." },
+        { error: { code: "INVALID_EMAIL" } },
         { status: 400 }
       );
     }
 
     if (!message || typeof message !== "string" || !message.trim()) {
       return NextResponse.json(
-        { error: "El mensaje no puede estar vacío." },
+        { error: { code: "INVALID_MESSAGE" } },
         { status: 400 }
       );
     }
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
         "[API/Contact] Error: Faltan las variables de entorno GMAIL_USER o GMAIL_APP_PASSWORD."
       );
       return NextResponse.json(
-        { error: "Configuración de correo no disponible en el servidor." },
+        { error: { code: "MAIL_NOT_CONFIGURED" } },
         { status: 500 }
       );
     }
@@ -79,10 +79,7 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("[API/Contact] Error al procesar el envío de correo:", error);
     return NextResponse.json(
-      {
-        error:
-          "No se pudo enviar el correo en este momento. Por favor intenta nuevamente.",
-      },
+      { error: { code: "SEND_FAILED" } },
       { status: 500 }
     );
   }

@@ -6,6 +6,7 @@ export const routing = defineRouting({
   localePrefix: "always",
   localeDetection: true,
   localeCookie: {
+    name: "LANGUAGE_LOCAL_SLIRENDEV",
     maxAge: 60 * 60 * 24 * 365,
   },
 });

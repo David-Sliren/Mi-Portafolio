@@ -97,5 +97,27 @@
     "copyright": "© 2026 David Sliren.",
     "rights": "Casi todos los derechos reservados."
   },
-  "metadata": {}
+  "metadata": {
+    "title": "David Sliren | Full Stack Multiplatform Developer",
+    "description": "Professional portfolio of David Sliren (David Salazar), Full Stack and multiplatform developer. Explore projects in React, Next.js, React Native and Node.js.",
+    "ogDescription": "Professional portfolio of David Sliren: web and mobile projects with React, Next.js, React Native and Node.js.",
+    "keywords": [
+      "full stack developer",
+      "portfolio",
+      "react",
+      "react native",
+      "next.js",
+      "node.js",
+      "typescript",
+      "tailwind css",
+      "david salazar",
+      "david sliren",
+      "sliren",
+      "slirendev",
+      "sliren.dev",
+      "frontend developer",
+      "backend developer"
+    ],
+    "jobTitle": "Full Stack Multiplatform Developer"
+  }
 }

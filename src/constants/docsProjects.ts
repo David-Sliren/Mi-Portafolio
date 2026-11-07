@@ -19,7 +19,7 @@ export const projectsData: ProjectItem[] = [
     title: { es: "Aleida | Contribución", en: "Aleida | Contribución" },
     descripcion: {
       es: "Familias y comunidades financian juntas el cuidado de un paciente, con inventario de medicinas en tiempo real, conciliación de aportes y roles de acceso (Administrador, Cuidador y Usuario) para que cada peso sea transparente.",
-      en: "Familias y comunidades financian juntas el cuidado de un paciente, con inventario de medicinas en tiempo real, conciliación de aportes y roles de acceso (Administrador, Cuidador y Usuario) para que cada peso sea transparente.",
+      en: "Families and communities fund a patient's care together, with real-time medicine inventory, contribution reconciliation and role-based access (Administrator, Caregiver and User) so every peso is transparent.",
     },
     platform: { es: "Web", en: "Web" },
     stack: [
@@ -35,7 +35,7 @@ export const projectsData: ProjectItem[] = [
     ],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778212368/Aleida-Contribution_xjbdbg.png",
     link: "https://aleida-contribucion.vercel.app/",
-    resultado: { es: "20-30 usuarios activos", en: "20-30 usuarios activos" },
+    resultado: { es: "20-30 usuarios activos", en: "20-30 active users" },
     repo: "https://github.com/David-Sliren/family-contribution",
   },
   {
@@ -43,9 +43,9 @@ export const projectsData: ProjectItem[] = [
     title: { es: "Renpentain", en: "Renpentain" },
     descripcion: {
       es: "App para que no se te olvide nada en el supermercado: organiza listas de compras anticipadas y tus visitas, con persistencia local de tus listas.",
-      en: "App para que no se te olvide nada en el supermercado: organiza listas de compras anticipadas y tus visitas, con persistencia local de tus listas.",
+      en: "App so you never forget anything at the supermarket: organize shopping lists ahead of time and your visits, with local persistence of your lists.",
     },
-    platform: { es: "Móvil", en: "Móvil" },
+    platform: { es: "Móvil", en: "Mobile" },
     stack: [
       "React",
       "Tailwind CSS",
@@ -55,7 +55,7 @@ export const projectsData: ProjectItem[] = [
     ],
     img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775803312/0f4a658a-804d-4294-8b3d-43d4839c7cd3.png",
     link: "https://renpentain.uptodown.com/android",
-    resultado: { es: "Publicada en Uptodown", en: "Publicada en Uptodown" },
+    resultado: { es: "Publicada en Uptodown", en: "Published on Uptodown" },
     repo: "https://github.com/David-Sliren/Renpentain",
   },
   {
@@ -63,7 +63,7 @@ export const projectsData: ProjectItem[] = [
     title: { es: "Chocolate Andalucía", en: "Chocolate Andalucía" },
     descripcion: {
       es: "Landing page para vender los cupos de un pasadía en la finca de la fábrica Chocolate Andalucía: presenta la experiencia y sus beneficios, con un botón de reserva directo.",
-      en: "Landing page para vender los cupos de un pasadía en la finca de la fábrica Chocolate Andalucía: presenta la experiencia y sus beneficios, con un botón de reserva directo.",
+      en: "Landing page to sell spots for a day trip at the Chocolate Andalucía factory farm: it presents the experience and its benefits, with a direct booking button.",
     },
     platform: { es: "Web", en: "Web" },
     stack: ["React", "Tailwind CSS", "Motion"],
@@ -75,7 +75,7 @@ export const projectsData: ProjectItem[] = [
     title: { es: "Tienda Sliren", en: "Tienda Sliren" },
     descripcion: {
       es: "Tienda y portafolio de aplicaciones móviles: permite explorar cada app, ver sus detalles y descargar las versiones estables, nuevas y beta.",
-      en: "Tienda y portafolio de aplicaciones móviles: permite explorar cada app, ver sus detalles y descargar las versiones estables, nuevas y beta.",
+      en: "Store and portfolio of mobile applications: explore each app, view its details and download stable, new and beta versions.",
     },
     platform: { es: "Web", en: "Web" },
     stack: ["React", "Tailwind CSS", "React Router", "Motion"],

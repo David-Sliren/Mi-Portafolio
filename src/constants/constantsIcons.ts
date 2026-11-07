@@ -85,7 +85,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: { es: "Bases de datos", en: "Bases de datos" },
+    title: { es: "Bases de datos", en: "Databases" },
     skills: [
       { label: "MongoDB", icon: SiMongodb },
       { label: "Mongoose", icon: SiMongoose },
@@ -96,7 +96,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: { es: "Estado y validación", en: "Estado y validación" },
+    title: { es: "Estado y validación", en: "State and validation" },
     skills: [
       { label: "Zustand", icon: TbPaw },
       { label: "Redux", icon: SiRedux },
@@ -114,7 +114,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: { es: "Herramientas", en: "Herramientas" },
+    title: { es: "Herramientas", en: "Tools" },
     skills: [
       { label: "Git", icon: SiGit },
       { label: "GitHub", icon: SiGithub },

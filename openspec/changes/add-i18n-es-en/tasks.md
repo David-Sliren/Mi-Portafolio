@@ -57,9 +57,9 @@
 
 ## 8. Redacción y revisión del inglés
 
-- [ ] 8.1 Redactar el borrador completo en `en-US` de todos los namespaces y de los datos (`docsProjects`, `docsCertificate`, categorías de skills); verificar que no queda ninguna cadena en español salvo nombres propios y stack.
-- [ ] 8.2 **Checkpoint B**: revisar el inglés de navbar, hero, skills, proyectos, certificados, contacto, footer, metadata, keywords y fechas; verificar naturalidad y consistencia de `en-US` sin cambios de diseño.
-- [ ] 8.3 **Checkpoint A**: revisar línea por línea `AboutMe` y los seis logros de `Experience` contra el original; verificar que se conservan 40 %, 20–30 usuarios, 97 de Lighthouse, 2+ años, 40+ proyectos, 2024, «2024 — Presente» y que no se añadió ni suavizó ninguna afirmación.
+- [x] 8.1 Redactar el borrador completo en `en-US` de todos los namespaces y de los datos (`docsProjects`, `docsCertificate`, categorías de skills); verificar que no queda ninguna cadena en español salvo nombres propios y stack.
+- [x] 8.2 **Checkpoint B**: revisar el inglés de navbar, hero, skills, proyectos, certificados, contacto, footer, metadata, keywords y fechas; verificar naturalidad y consistencia de `en-US` sin cambios de diseño.
+- [x] 8.3 **Checkpoint A**: revisar línea por línea `AboutMe` y los seis logros de `Experience` contra el original; verificar que se conservan 40 %, 20–30 usuarios, 97 de Lighthouse, 2+ años, 40+ proyectos, 2024, «2024 — Presente» y que no se añadió ni suavizó ninguna afirmación.
 
 ## 9. Verificación final e integración
 

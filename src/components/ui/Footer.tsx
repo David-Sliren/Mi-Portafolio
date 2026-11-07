@@ -1,6 +1,9 @@
+"use client";
+
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import { FaTiktok, FaXTwitter } from "react-icons/fa6";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 const listIcon = [
   {
@@ -27,6 +30,7 @@ const listIcon = [
 
 const Footer = () => {
   const t = useTranslations("footer");
+  const locale = useLocale();
 
   return (
     <footer className="w-full py-8 border-t border-[#414753]/15 bg-[#121315]">
@@ -36,8 +40,16 @@ const Footer = () => {
             Sliren.dev
           </span>
         </div>
-        <div className="items-center text-center text-xs tracking-widest uppercase text-[#c1c6d6]">
-          {t("copyright")} <br className="sm:hidden" /> {t("rights")}
+        <div className="flex flex-col items-center text-center text-xs gap-1.5 tracking-widest uppercase text-[#c1c6d6]">
+          <span>
+            {t("copyright")} <br className="sm:hidden" /> {t("rights")}
+          </span>
+          <Link
+            href={`/${locale}/cookies-policy`}
+            className="text-[#c1c6d6] hover:text-sky-400 transition-colors"
+          >
+            {t("cookiesPolicy", { defaultValue: "Cookies" })}
+          </Link>
         </div>
         <div className="flex gap-x-5">
           {listIcon.map((item) => {

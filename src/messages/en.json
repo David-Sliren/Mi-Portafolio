@@ -103,13 +103,56 @@
   },
   "footer": {
     "copyright": "© 2026 David Sliren.",
-    "rights": "Almost all rights reserved."
+    "rights": "Almost all rights reserved.",
+    "cookiesPolicy": "Cookies policy"
   },
   "metadata": {
     "title": "David Sliren | Full Stack Multiplatform Developer",
     "description": "Professional portfolio of David Sliren (David Salazar), Full Stack and multiplatform developer. Explore projects in React, Next.js, React Native and Node.js.",
     "ogDescription": "Professional portfolio of David Sliren: web and mobile projects with React, Next.js, React Native and Node.js.",
-    "keywords": ["full stack developer", "portfolio", "react", "react native", "next.js", "node.js", "typescript", "tailwind css", "david salazar", "david sliren", "sliren", "slirendev", "sliren.dev", "frontend developer", "backend developer"],
+    "keywords": [
+      "full stack developer",
+      "portfolio",
+      "react",
+      "react native",
+      "next.js",
+      "node.js",
+      "typescript",
+      "tailwind css",
+      "david salazar",
+      "david sliren",
+      "sliren",
+      "slirendev",
+      "sliren.dev",
+      "frontend developer",
+      "backend developer"
+    ],
     "jobTitle": "Full Stack Multiplatform Developer"
+  },
+  "cookies": {
+    "banner": {
+      "text": "This site uses a single functional cookie to remember your language (LANGUAGE_LOCAL_SLIRENDEV), valid for one year. No analytics or advertising cookies are used.",
+      "accept": "Accept",
+      "policyLink": "Cookies policy"
+    },
+    "page": {
+      "title": "Cookies policy",
+      "intro": "This policy explains which cookies the site slirendev.vercel.app uses and for what purpose.",
+      "table": {
+        "name": "Name",
+        "purpose": "Purpose",
+        "duration": "Duration",
+        "type": "Type"
+      },
+      "localeCookie": {
+        "name": "LANGUAGE_LOCAL_SLIRENDEV",
+        "purpose": "Remember the selected language (es/en) for future visits.",
+        "duration": "1 year",
+        "type": "First-party, functional"
+      },
+      "thirdParty": "No analytics, advertising or third-party cookies are used.",
+      "manage": "You can delete the cookie from your browser settings; the site will detect the default language again.",
+      "contact": "For any question about this policy, write to jhojansalazardev@gmail.com."
+    }
   }
 }

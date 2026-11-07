@@ -3,6 +3,7 @@ import { Inter, Manrope } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import CookieBanner from "@/components/CookieBanner";
 import "../globals.css";
 
 const siteUrl =
@@ -158,7 +159,7 @@ export default async function RootLayout({
       lang={locale}
       className={`${inter.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-[#121315]">
         <NextIntlClientProvider messages={messages}>
           <script
             type="application/ld+json"
@@ -169,6 +170,7 @@ export default async function RootLayout({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
           />
           {children}
+          <CookieBanner />
         </NextIntlClientProvider>
       </body>
     </html>

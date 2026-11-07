@@ -103,7 +103,8 @@
   },
   "footer": {
     "copyright": "© 2026 David Sliren.",
-    "rights": "Casi todos los derechos reservados."
+    "rights": "Casi todos los derechos reservados.",
+    "cookiesPolicy": "Política de cookies"
   },
   "metadata": {
     "title": "David Sliren | Desarrollador Full Stack Multiplataforma",
@@ -127,5 +128,31 @@
       "backend developer"
     ],
     "jobTitle": "Desarrollador Full Stack Multiplataforma"
+  },
+  "cookies": {
+    "banner": {
+      "text": "Este sitio usa una única cookie funcional para recordar tu idioma (LANGUAGE_LOCAL_SLIRENDEV), válida por un año. No se usan cookies de análisis ni de publicidad.",
+      "accept": "Aceptar",
+      "policyLink": "Política de cookies"
+    },
+    "page": {
+      "title": "Política de cookies",
+      "intro": "Esta política explica qué cookies utiliza el sitio slirendev.vercel.app y con qué finalidad.",
+      "table": {
+        "name": "Nombre",
+        "purpose": "Finalidad",
+        "duration": "Duración",
+        "type": "Tipo"
+      },
+      "localeCookie": {
+        "name": "LANGUAGE_LOCAL_SLIRENDEV",
+        "purpose": "Recordar el idioma seleccionado (es/en) para las próximas visitas.",
+        "duration": "1 año",
+        "type": "Primera parte, funcional"
+      },
+      "thirdParty": "No se utilizan cookies de análisis, publicidad ni de terceros.",
+      "manage": "Puedes borrar la cookie desde la configuración de tu navegador; el sitio volverá a detectar el idioma por defecto.",
+      "contact": "Para cualquier duda sobre esta política, escribe a jhojansalazardev@gmail.com."
+    }
   }
 }

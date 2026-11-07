@@ -65,9 +65,18 @@
 
 - [x] 9.1 Ejecutar `pnpm lint` y corregir cualquier error o advertencia introducida por el cambio.
 - [x] 9.2 Ejecutar `pnpm build` y confirmar que `/es` y `/en` son estáticas, que no hay rutas dinámicas inesperadas y que el build termina sin errores.
-- [x] 9.3 Probar la matriz completa en `pnpm dev`: `/` → 307, cookie `NEXT_LOCALE` de un año, `/fr` → `/es/fr` → 404 sin bucles, anchors internos, selector con hash, formulario en ambos idiomas y `lang` correcto en cada documento.
+- [x] 9.3 Probar la matriz completa en `pnpm dev`: `/` → 307, cookie `LANGUAGE_LOCAL_SLIRENDEV` de un año, `/fr` → `/es/fr` → 404 sin bucles, anchors internos, selector con hash, formulario en ambos idiomas y `lang` correcto en cada documento.
 - [x] 9.4 Confirmar que `src/app/blog/[slug]` y `src/app/(home)/shaders` no se movieron ni se modificaron, y que el blog queda anotado para `src/app/[locale]/blog/[slug]`.
 - [ ] 9.5 Desplegar a un preview de Vercel y repetir las comprobaciones de `/`, `/es`, `/en`, `/sitemap.xml`, `/robots.txt` y envío del formulario.
+
+## 10. Cookie de idioma, banner y política de cookies
+
+- [x] 10.1 Cambiar `localeCookie.name` a `LANGUAGE_LOCAL_SLIRENDEV` en `src/i18n/routing.ts`; verificar con `curl` que `/en` fija la cookie con el nuevo nombre y `Max-Age` de un año, y que el rename no rompe `/` → 307.
+- [x] 10.2 Añadir los namespaces `cookies` a `src/messages/{es,en}.json` (texto del banner, botón y página) y comprobar `pnpm check:i18n`.
+- [x] 10.3 Crear el banner de cookies (client component) montado en `src/app/[locale]/layout.tsx`: muestra en primera visita, «Aceptar» guarda en `localStorage`, no bloquea el contenido y no aparece tras aceptar; verificar en `/es` y `/en`.
+- [x] 10.4 Crear `src/app/[locale]/cookies-policy/page.tsx` con contenido localizado, `generateMetadata` (canonical `/${locale}/cookies-policy`, hreflang) y enlace desde el footer; verificar 200 en ambas URLs.
+- [x] 10.5 Registrar `/es/cookies-policy` y `/en/cookies-policy` en `src/app/sitemap.ts` con `alternates.languages`; verificar el XML.
+- [x] 10.6 Actualizar `README.md` (cookie renombrada) y ejecutar `pnpm lint`, `pnpm check:i18n` y `pnpm build`; confirmar que `/es/cookies-policy` y `/en/cookies-policy` salen estáticas.
 
 ## Workflow follow-up
 

@@ -42,7 +42,7 @@ Es la opción con soporte nativo de App Router, `generateMetadata`, `hreflang`, 
 
 ### D3. `proxy.ts` con detección activa y cookie de un año
 
-Se usa `src/proxy.ts` (nombre de la convención en Next 16; `middleware.ts` está deprecado). El matcher excluye `api`, `_next`, `_vercel` y rutas con punto. El proxy solo redirige y fija `NEXT_LOCALE`; no renderiza ni hace dinámicas las páginas. `localeDetection` queda activo y `localeCookie.maxAge` en `60 * 60 * 24 * 365`.
+Se usa `src/proxy.ts` (nombre de la convención en Next 16; `middleware.ts` está deprecado). El matcher excluye `api`, `_next`, `_vercel` y rutas con punto. El proxy solo redirige y fija `LANGUAGE_LOCAL_SLIRENDEV`; no renderiza ni hace dinámicas las páginas. `localeDetection` queda activo y `localeCookie.maxAge` en `60 * 60 * 24 * 365`. El nombre de la cookie se configura en `localeCookie.name` de `src/i18n/routing.ts`.
 
 **Alternativa descartada:** `redirects()` en `next.config.ts`. Evita la función de runtime, pero no permite detección por cabecera ni cookie; se perdía una decisión ya tomada.
 
@@ -123,6 +123,14 @@ El inglés no se redacta en el proposal. Se produce como tarea de `tasks.md` den
 2. **Checkpoint A**: `AboutMe` y los seis logros de `Experience`. Revisión línea por línea contra el original; no se alteran cifras (40 %, 20–30 usuarios, 97 Lighthouse, 2+ años, 40+ proyectos), fechas (2024, «2024 — Presente»), tecnologías, roles ni afirmaciones. Cualquier duda se escala antes de cerrar la tarea.
 
 La separación existe porque el contenido en primera persona es el único donde una traducción "natural" puede introducir una promesa que el original no hace.
+
+### D12. Banner de cookies en `localStorage` y página `/cookies-policy`
+
+El sitio solo utiliza la cookie funcional de idioma `LANGUAGE_LOCAL_SLIRENDEV`; `@vercel/analytics` está instalado pero sin usar y no se activan cookies de terceros. Por eso el banner es **informativo**: no bloquea el contenido, ofrece un botón «Aceptar» y persiste el estado en `localStorage` (`cookiesAccepted`), sin crear una segunda cookie. Se monta en `src/app/[locale]/layout.tsx` como client component.
+
+La política de cookies vive en `src/app/[locale]/cookies-policy/page.tsx` (ruta estática por locale, `generateMetadata` con canonical propio y `hreflang`), se enlaza desde el footer y se registra en el sitemap. Lista exactamente la cookie de idioma (finalidad, duración de un año, primera parte) y declara la ausencia de cookies de análisis y publicidad.
+
+**Alternativa descartada:** banner con botón «Rechazar» y cookie propia de consentimiento. Añadiría una segunda cookie y desactivaría la preferencia de idioma sin beneficio real, porque no existen cookies no funcionales que condicionar.
 
 ## Risks / Trade-offs
 

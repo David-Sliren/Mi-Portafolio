@@ -31,7 +31,7 @@ El sistema SHALL responder a `GET /` con una redirección **307** hacia un local
 
 #### Scenario: Preferencia guardada
 
-- **WHEN** se solicita `/` con la cookie `NEXT_LOCALE=es`
+- **WHEN** se solicita `/` con la cookie `LANGUAGE_LOCAL_SLIRENDEV=es`
 - **THEN** la respuesta es 307 con `Location: /es`
 
 #### Scenario: Sin preferencia reconocible
@@ -46,16 +46,16 @@ El sistema SHALL responder a `GET /` con una redirección **307** hacia un local
 
 ### Requirement: Cookie funcional de idioma
 
-El sistema SHALL recordar el idioma elegido en la cookie `NEXT_LOCALE` durante un año y SHALL respetar una URL con prefijo por encima del valor de la cookie.
+El sistema SHALL recordar el idioma elegido en la cookie `LANGUAGE_LOCAL_SLIRENDEV` durante un año y SHALL respetar una URL con prefijo por encima del valor de la cookie.
 
 #### Scenario: Se guarda la preferencia
 
 - **WHEN** un visitante abre `/en` sin cookie previa
-- **THEN** la respuesta fija `NEXT_LOCALE=en` con un `Max-Age` de un año
+- **THEN** la respuesta fija `LANGUAGE_LOCAL_SLIRENDEV=en` con un `Max-Age` de un año
 
 #### Scenario: La URL manda sobre la cookie
 
-- **WHEN** un visitante con `NEXT_LOCALE=es` abre `/en`
+- **WHEN** un visitante con `LANGUAGE_LOCAL_SLIRENDEV=es` abre `/en`
 - **THEN** ve la página en inglés y no es redirigido a `/es`
 
 ### Requirement: Renderizado estático por idioma

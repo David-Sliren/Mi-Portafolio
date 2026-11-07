@@ -81,7 +81,7 @@ portfolio/
 
 ## 🌐 Internacionalización (i18n)
 
-El sitio es bilingüe (**español** por defecto y **inglés**) con URLs por idioma (`/es`, `/en`), usando [next-intl](https://next-intl.dev/) 4.x. El idioma se resuelve por URL (`localePrefix: "always"`), cookie `NEXT_LOCALE` (1 año) y detección por `Accept-Language`.
+El sitio es bilingüe (**español** por defecto y **inglés**) con URLs por idioma (`/es`, `/en`), usando [next-intl](https://next-intl.dev/) 4.x. El idioma se resuelve por URL (`localePrefix: "always"`), cookie `LANGUAGE_LOCAL_SLIRENDEV` (1 año) y detección por `Accept-Language`.
 
 Estructura relevante:
 

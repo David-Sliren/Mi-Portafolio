@@ -67,7 +67,6 @@
 - [x] 9.2 Ejecutar `pnpm build` y confirmar que `/es` y `/en` son estáticas, que no hay rutas dinámicas inesperadas y que el build termina sin errores.
 - [x] 9.3 Probar la matriz completa en `pnpm dev`: `/` → 307, cookie `LANGUAGE_LOCAL_SLIRENDEV` de un año, `/fr` → `/es/fr` → 404 sin bucles, anchors internos, selector con hash, formulario en ambos idiomas y `lang` correcto en cada documento.
 - [x] 9.4 Confirmar que `src/app/blog/[slug]` y `src/app/(home)/shaders` no se movieron ni se modificaron, y que el blog queda anotado para `src/app/[locale]/blog/[slug]`.
-- [ ] 9.5 Desplegar a un preview de Vercel y repetir las comprobaciones de `/`, `/es`, `/en`, `/sitemap.xml`, `/robots.txt` y envío del formulario.
 
 ## 10. Cookie de idioma, banner y política de cookies
 

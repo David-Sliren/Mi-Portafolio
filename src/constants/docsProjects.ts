@@ -1,4 +1,9 @@
 import type { Localized } from "./constantsIcons";
+import aleidaContribution from "@/assets/image/proyects/aleidaContribution.webp";
+import renpentain from "@/assets/image/proyects/renpentain.webp";
+import chocolateAndaluz from "@/assets/image/proyects/chocolateAndaluz.webp";
+import tiendaSliren from "@/assets/image/proyects/tiendaSliren.webp";
+import { StaticImageData } from "next/image";
 
 export interface ProjectItem {
   id: string;
@@ -6,7 +11,7 @@ export interface ProjectItem {
   descripcion: Localized<string>;
   platform: Localized<string>;
   stack: string[];
-  img: string;
+  img: string | StaticImageData;
   link: string;
   // Opcionales: úsalos en la tarjeta para reforzar la venta
   resultado?: Localized<string>; // una línea de prueba o resultado
@@ -33,7 +38,7 @@ export const projectsData: ProjectItem[] = [
       "Motion",
       "OpenCode",
     ],
-    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1778212368/Aleida-Contribution_xjbdbg.png",
+    img: aleidaContribution,
     link: "https://aleida-contribucion.vercel.app/",
     resultado: { es: "20-30 usuarios activos", en: "20-30 active users" },
     repo: "https://github.com/David-Sliren/family-contribution",
@@ -53,7 +58,7 @@ export const projectsData: ProjectItem[] = [
       "React Router",
       "Motion",
     ],
-    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775803312/0f4a658a-804d-4294-8b3d-43d4839c7cd3.png",
+    img: renpentain,
     link: "https://renpentain.uptodown.com/android",
     resultado: { es: "Publicada en Uptodown", en: "Published on Uptodown" },
     repo: "https://github.com/David-Sliren/Renpentain",
@@ -67,7 +72,7 @@ export const projectsData: ProjectItem[] = [
     },
     platform: { es: "Web", en: "Web" },
     stack: ["React", "Tailwind CSS", "Motion"],
-    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1785363568/chocolate_andalucia_dwnvni.webp",
+    img: chocolateAndaluz,
     link: "https://chocolate-andaluz.vercel.app/",
   },
   {
@@ -79,7 +84,7 @@ export const projectsData: ProjectItem[] = [
     },
     platform: { es: "Web", en: "Web" },
     stack: ["React", "Tailwind CSS", "React Router", "Motion"],
-    img: "https://res.cloudinary.com/dudiot7uv/image/upload/v1775804567/2a18ffe2-0548-42f5-83a5-b89512446b00.png",
+    img: tiendaSliren,
     link: "https://sliren-store.vercel.app/",
   },
 ];

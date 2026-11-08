@@ -1,12 +1,13 @@
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import { useTranslations } from "next-intl";
+import Image, { StaticImageData } from "next/image";
 
 interface CertificateCardProps {
   title: string;
   description?: string;
   place: string;
   date: string;
-  imgsrc: string;
+  imgsrc: string | StaticImageData;
   link: string;
 }
 
@@ -28,8 +29,7 @@ const CertificateCard = ({
       className="col-span-full sm:col-span-3 lg:col-span-4 group bg-gradient-blue rounded-xl p-6 border border-outline-variant/10 transition-all duration-300 hover:scale-105 brightness-85 timeline-view animate-range-early-entry animate-fade-in-right overflow-hidden"
     >
       <div className="w-full h-20 rounded-lg m-auto mb-6 flex items-center justify-center overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           className="size-full object-cover object-top"
           alt={t("cardAlt", { title, place })}
           loading="lazy"

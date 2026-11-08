@@ -1,11 +1,12 @@
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import { useTranslations } from "next-intl";
 import { fullSkill } from "../../constants/constantsIcons";
+import Image, { StaticImageData } from "next/image";
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  imgSrc: string;
+  imgSrc: string | StaticImageData;
   imgAlt?: string;
   platform: string;
   link: string;
@@ -30,8 +31,7 @@ const ProjectCard = ({
       rel="noopener noreferrer"
       className="shrink-0 w-[85vw] md:w-[600px] group relative rounded-2xl sm:rounded-[2rem] aspect-auto sm:aspect-[16/10] border border-white/25 sm:border-0 overflow-hidden"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         alt={imgAlt}
         loading="lazy"
         decoding="async"

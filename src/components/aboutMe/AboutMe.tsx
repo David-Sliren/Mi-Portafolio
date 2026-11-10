@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import Yo from "../../assets/image/Yo.webp";
 
 const AboutMe = () => {
+  const t = useTranslations("about");
+
   return (
     <section
       id="about"
@@ -10,52 +13,40 @@ const AboutMe = () => {
       <div className="grid grid-col-1 lg:grid-cols-12 gap-16 items-center xl:px-0 content-center justify-items-center">
         <div className="col-span-full text-center  lg:col-span-8">
           <h2 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-tight timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both uppercase">
-            Sobre{" "}
+            {t("title")}{" "}
             <span className="bg-gradient-blue text-transparent bg-clip-text timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
-              mí
+              {t("titleAccent")}
             </span>
             .
           </h2>
           <p className="text-stone-300/85 text-left text-xs md:text-lg font-body leading-relaxed max-w-4xl mb-12 mx-auto timeline-view animate-range-early-entry animate-fade-blur animate-fill-mode-both">
-            Desde que descubrí la programación, me enamoré de la libertad de
-            crear. Siempre me fascinó la idea de poder transformar una idea en
-            algo real, construir desde cero y dar vida a experiencias que antes
-            solo existían en la imaginación.
+            {t("p1")}
             <br />
             <br />
-            Disfruto especialmente diseñar aplicaciones que se sientan
-            organizadas, fluidas y agradables de usar. Me interesa la forma en
-            que una interfaz, una animación o una arquitectura bien pensada
-            pueden hacer que la tecnología deje de sentirse fría y se convierta
-            en una extensión natural de las personas.
+            {t("p2")}
             <br />
             <br />
-            Soy desarrollador Full Stack con foco en JavaScript y TypeScript
-            (React, Next.js, Node.js), y ampliando mi stack hacia Python con
-            FastAPI. Diseño y despliego aplicaciones web y móviles de principio
-            a fin: arquitectura, backend, frontend y producción.
+            {t("p3")}
             <br />
             <br />
-            Me apasiona aprender constantemente, resolver problemas complejos y
-            mejorar cada detalle de los proyectos que construyo, tanto a nivel
-            técnico como visual.
+            {t("p4")}
           </p>
           <div className="flex items-center space-x-8 justify-center">
             <div className="flex flex-col timeline-view animate-range-flash-entry animate-fade-blur animate-fill-mode-both">
               <span className="text-3xl font-headline font-bold text-on-surface">
-                2+
+                {t("metrics.yearsValue")}
               </span>
               <span className="text-xs uppercase tracking-widest text-on-surface-variant">
-                Años de experiencia
+                {t("metrics.yearsLabel")}
               </span>
             </div>
             <div className="w-px h-10 bg-gradient-blue" />
             <div className="flex flex-col timeline-view animate-range-flash-entry animate-fade-blur animate-fill-mode-both">
               <span className="text-3xl font-headline font-bold text-on-surface">
-                40+
+                {t("metrics.projectsValue")}
               </span>
               <span className="text-xs uppercase tracking-widest text-on-surface-variant">
-                Proyectos
+                {t("metrics.projectsLabel")}
               </span>
             </div>
           </div>
@@ -64,7 +55,7 @@ const AboutMe = () => {
         <article className="hidden lg:block col-span-full lg:col-span-4 lg:size-80 overflow-hidden timeline-view animate-range-early-entry animate-fade-in-up animate-fill-mode-both mask-img-animate">
           <Image
             src={Yo}
-            alt="Fotografía de David Salazar, Desarrollador Full Stack"
+            alt={t("imageAlt")}
             loading="lazy"
             className="size-full object-cover object-top rounded-full"
             height={1024}

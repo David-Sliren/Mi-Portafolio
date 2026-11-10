@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "links": {
+      "experience": "Experience",
+      "skills": "Skills",
+      "projects": "Projects",
+      "education": "Education",
+      "about": "About me"
+    },
+    "contactCta": "Contact",
+    "logoAlt": "Personal logo"
+  },
+  "hero": {
+    "role": "Full Stack Developer",
+    "subtitle": "My goal is to build applications that not only work well, but convey personality, elegance and a genuine experience for those who use them.",
+    "githubCta": "View GitHub",
+    "cvCta": "Download CV",
+    "scroll": "Scroll"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My professional journey and technical growth.",
+    "role": "Full Stack Developer",
+    "company": "Independent freelance professional · Remote",
+    "summary": "Since 2024 I design, develop and ship web and mobile applications end to end, in my own projects and for real clients: frontend, backend and production, with JavaScript, TypeScript, React, Next.js, Node.js and Python.",
+    "achievementsLabel": "Key achievements:",
+    "achievements": [
+      "I develop a grade management system for an independent teacher working across several institutes, centralizing the registration and tracking of his students' performance.",
+      "I built and maintain Aleida Contribución, a web application with 20 to 30 active users, with role-based access control and financial reconciliation.",
+      "I reduced unnecessary re-renders by 40% with modular state architectures using Zustand (slices).",
+      "I optimized a SPA with Vite, React and TypeScript to a Lighthouse score of 97, also fixing critical navigation bugs on mobile devices.",
+      "I guarantee data integrity in production with Mongoose schemas and validations over MongoDB.",
+      "I published Renpentain, a shopping list mobile app available on Uptodown."
+    ],
+    "period": "2024 — Present"
+  },
+  "skills": {
+    "title": "Skills",
+    "titleAccent": "Technical"
+  },
+  "projects": {
+    "title": "Projects",
+    "titleAccent": "Featured",
+    "range": "2024 - 2026",
+    "viewProject": "View project"
+  },
+  "certificates": {
+    "eyebrow": "Technical Validation",
+    "title": "Certifications",
+    "titleAccent": "Professional",
+    "description": "Official accreditations backing my technical experience.",
+    "cardAlt": "Certificate {title} from {place}",
+    "viewCertificate": "View certificate"
+  },
+  "about": {
+    "title": "About",
+    "titleAccent": "me",
+    "p1": "Since I discovered programming, I fell in love with the freedom to create. I have always been fascinated by the idea of turning an idea into something real, building from scratch and bringing to life experiences that previously only existed in the imagination.",
+    "p2": "I especially enjoy designing applications that feel organized, fluid and pleasant to use. I care about how a well-thought-out interface, animation or architecture can make technology stop feeling cold and become a natural extension of people.",
+    "p3": "I am a Full Stack developer focused on JavaScript and TypeScript (React, Next.js, Node.js), expanding my stack towards Python with FastAPI. I design and ship web and mobile applications end to end: architecture, backend, frontend and production.",
+    "p4": "I am passionate about constantly learning, solving complex problems and improving every detail of the projects I build, both technically and visually.",
+    "metrics": {
+      "yearsValue": "2+",
+      "yearsLabel": "Years of experience",
+      "projectsValue": "40+",
+      "projectsLabel": "Projects"
+    },
+    "imageAlt": "Photo of David Salazar, Full Stack Developer"
+  },
+  "contact": {
+    "title": "LET'S BUILD SOMETHING",
+    "titleAccent": "AMAZING",
+    "description": "I am available for freelance projects, collaborations and remote job opportunities. If your project needs someone to take it from idea to production and own it, let's talk.",
+    "form": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "David Sliren",
+        "email": "jhojansalazardev@gmail.com",
+        "message": "Tell me about your project..."
+      },
+      "submit": "Send Email",
+      "submitting": "Sending message...",
+      "close": "Close",
+      "error": "There was a problem sending the message. Please try again.",
+      "networkError": "Could not connect to the server. Check your internet connection."
+    },
+    "confirmation": {
+      "message": "Thanks, I will get back to you within 24 hours",
+      "again": "Send another email"
+    },
+    "errors": {
+      "INVALID_NAME": "Name is required.",
+      "INVALID_EMAIL": "The email format is not valid.",
+      "INVALID_MESSAGE": "The message cannot be empty.",
+      "MAIL_NOT_CONFIGURED": "The email service is not available at this moment.",
+      "SEND_FAILED": "The email could not be sent right now. Please try again.",
+      "NETWORK": "Could not connect to the server. Check your internet connection."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 David Sliren.",
+    "rights": "Almost all rights reserved.",
+    "cookiesPolicy": "Cookies policy"
+  },
+  "metadata": {
+    "title": "David Sliren | Full Stack Multiplatform Developer",
+    "description": "Professional portfolio of David Sliren (David Salazar), Full Stack and multiplatform developer. Explore projects in React, Next.js, React Native and Node.js.",
+    "ogDescription": "Professional portfolio of David Sliren: web and mobile projects with React, Next.js, React Native and Node.js.",
+    "keywords": [
+      "full stack developer",
+      "portfolio",
+      "react",
+      "react native",
+      "next.js",
+      "node.js",
+      "typescript",
+      "tailwind css",
+      "david salazar",
+      "david sliren",
+      "sliren",
+      "slirendev",
+      "sliren.dev",
+      "frontend developer",
+      "backend developer"
+    ],
+    "jobTitle": "Full Stack Multiplatform Developer"
+  },
+  "cookies": {
+    "banner": {
+      "text": "This site uses a single functional cookie to remember your language (LANGUAGE_LOCAL_SLIRENDEV), valid for one year. No analytics or advertising cookies are used.",
+      "accept": "Accept",
+      "policyLink": "Cookies policy"
+    },
+    "page": {
+      "title": "Cookies policy",
+      "intro": "This policy explains which cookies the site slirendev.vercel.app uses and for what purpose.",
+      "table": {
+        "name": "Name",
+        "purpose": "Purpose",
+        "duration": "Duration",
+        "type": "Type"
+      },
+      "localeCookie": {
+        "name": "LANGUAGE_LOCAL_SLIRENDEV",
+        "purpose": "Remember the selected language (es/en) for future visits.",
+        "duration": "1 year",
+        "type": "First-party, functional"
+      },
+      "thirdParty": "No analytics, advertising or third-party cookies are used.",
+      "manage": "You can delete the cookie from your browser settings; the site will detect the default language again.",
+      "contact": "For any question about this policy, write to jhojansalazardev@gmail.com."
+    }
+  }
+}

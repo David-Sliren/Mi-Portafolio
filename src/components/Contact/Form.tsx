@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { useTranslations } from "next-intl";
 import { LuLoader } from "react-icons/lu";
 
 interface FormProps {
@@ -10,6 +11,7 @@ interface FormProps {
 const Form = ({ handler }: FormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const t = useTranslations("contact");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,16 +40,16 @@ const Form = ({ handler }: FormProps) => {
         form.reset();
         handler();
       } else {
+        const code = result?.error?.code;
         setErrorMessage(
-          result?.error ||
-            "Hubo un problema al enviar el mensaje. Por favor intenta de nuevo."
+          code && t.has(`errors.${code}`)
+            ? t(`errors.${code}`)
+            : t("form.error")
         );
       }
     } catch (error) {
       console.error("[Form Contact Error]:", error);
-      setErrorMessage(
-        "No se pudo establecer conexión con el servidor. Revisa tu conexión a internet."
-      );
+      setErrorMessage(t("errors.NETWORK"));
     } finally {
       setIsSubmitting(false);
     }
@@ -66,7 +68,7 @@ const Form = ({ handler }: FormProps) => {
             onClick={() => setErrorMessage(null)}
             className="text-red-400 hover:text-red-200 text-xs font-semibold uppercase tracking-wider ml-4 cursor-pointer"
           >
-            Cerrar
+            {t("form.close")}
           </button>
         </div>
       )}
@@ -77,12 +79,12 @@ const Form = ({ handler }: FormProps) => {
             htmlFor="contact-name"
             className="text-[10px] font-bold uppercase tracking-widest text-[#c1c6d6] ml-1 font-inter"
           >
-            Nombre
+            {t("form.labels.name")}
           </label>
           <input
             id="contact-name"
             className="w-full bg-[#1b1c1e] border border-[#414753]/20 focus:border-[#0071E3] focus:ring-1 focus:ring-[#0071E3] rounded-xl p-4 text-[#e3e2e4] placeholder:text-[#c1c6d6]/30 transition-all outline-none disabled:opacity-50"
-            placeholder="David Sliren"
+            placeholder={t("form.placeholders.name")}
             type="text"
             name="name"
             required
@@ -94,12 +96,12 @@ const Form = ({ handler }: FormProps) => {
             htmlFor="contact-email"
             className="text-[10px] font-bold uppercase tracking-widest text-[#c1c6d6] ml-1 font-inter"
           >
-            Correo
+            {t("form.labels.email")}
           </label>
           <input
             id="contact-email"
             className="w-full bg-[#1b1c1e] border border-[#414753]/20 focus:border-[#0071E3] focus:ring-1 focus:ring-[#0071E3] rounded-xl p-4 text-[#e3e2e4] placeholder:text-[#c1c6d6]/30 transition-all outline-none disabled:opacity-50"
-            placeholder="jhojansalazardev@gmail.com"
+            placeholder={t("form.placeholders.email")}
             type="email"
             name="email"
             required
@@ -112,12 +114,12 @@ const Form = ({ handler }: FormProps) => {
           htmlFor="contact-message"
           className="text-[10px] font-bold uppercase tracking-widest text-[#c1c6d6] ml-1 font-inter"
         >
-          Mensaje
+          {t("form.labels.message")}
         </label>
         <textarea
           id="contact-message"
           className="w-full bg-[#1b1c1e] border border-[#414753]/20 focus:border-[#0071E3] focus:ring-1 focus:ring-[#0071E3] rounded-xl p-4 text-[#e3e2e4] placeholder:text-[#c1c6d6]/30 transition-all resize-none outline-none disabled:opacity-50"
-          placeholder="Háblame sobre tu proyecto..."
+          placeholder={t("form.placeholders.message")}
           rows={5}
           name="message"
           required
@@ -132,10 +134,10 @@ const Form = ({ handler }: FormProps) => {
         {isSubmitting ? (
           <>
             <LuLoader className="animate-spin text-xl" />
-            <span>Enviando mensaje...</span>
+            <span>{t("form.submitting")}</span>
           </>
         ) : (
-          <span>Enviar Correo</span>
+          <span>{t("form.submit")}</span>
         )}
       </button>
     </form>

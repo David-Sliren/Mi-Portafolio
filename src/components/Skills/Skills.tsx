@@ -1,20 +1,25 @@
 import CardSkill from "./CardSkill";
+import { useTranslations, useLocale } from "next-intl";
+import type { Locale } from "../../i18n/routing";
 import { skillCategories } from "../../constants/constantsIcons";
 
 const Skills = () => {
+  const t = useTranslations("skills");
+  const locale = useLocale() as Locale;
+
   return (
     <section className="py-32 max-w-7xl mx-auto px-8" id="skills">
       <h2 className="text-5xl font-bold tracking-tight mb-16 text-center uppercase">
-        Habilidades{" "}
+        {t("title")}{" "}
         <span className="bg-gradient-blue bg-clip-text text-transparent">
-          Técnicas
+          {t("titleAccent")}
         </span>
       </h2>
       <div className="space-y-14">
         {skillCategories.map((category) => (
-          <div key={category.title}>
+          <div key={category.title.es}>
             <h3 className="bg-gradient-blue bg-clip-text text-transparent text-sm font-bold uppercase tracking-widest  mb-6">
-              {category.title}
+              {category.title[locale]}
             </h3>
             <article className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {category.skills.map((skill) => (
